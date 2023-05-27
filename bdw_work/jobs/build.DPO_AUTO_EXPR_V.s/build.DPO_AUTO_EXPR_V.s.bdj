@@ -1,0 +1,12 @@
+12442		// ppid
+12445		// pid
+ws26	// host name
+bdw_work/trace/build.DPO_AUTO_EXPR_V.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685085404	// start time: Fri May 26 15:16:44 2023
+1685085429	// end time:   Fri May 26 15:17:09 2023
+make --no-print-directory -f Makefile CWBExec_build=1 build_DPO_AUTO_EXPR_V_sub
+

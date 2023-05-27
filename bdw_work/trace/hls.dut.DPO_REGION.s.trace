@@ -1,0 +1,2380 @@
+BDW_HLS_CONFIG=DPO_REGION BDW_CYNTH_CONFIG=DPO_REGION \
+BDW_VRTL_FILE=bdw_work/modules/dut/DPO_REGION/dut_rtl.v BDW_CRTL_FILE=bdw_work/modules/dut/DPO_REGION/dut_rtl.cc BDW_MODULE=dut BDW_CYNTH_CONFIG=DPO_REGION BDW_CYNTH_CONFIG_DIR=bdw_work/modules/dut/DPO_REGION BDW_HLS_CONFIG=DPO_REGION BDW_HLS_CONFIG_DIR=bdw_work/modules/dut/DPO_REGION \
+stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include --c++14  --tl=/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --balance_expr=delay --clock_period=5.000 --cycle_slack=0.500 --dpopt_auto=op --flatten_arrays=all --ignore_scan_cells=on --inline_partial_constants=on --lsb_trimming=on --message_detail=1 --path_delay_limit=111.000 --rtl_annotation=op,stack --undef_func=error --unroll_loops=off -DDPO_REGION=1 -DBDW_RTL_dut_DPO_REGION=1 -DLAT=2 -DDPOPT_ALL  \
+	-d bdw_work/modules/dut/DPO_REGION -o dut_rtl.cc \
+	--hls_module=dut --hls_config=DPO_REGION --project=project.tcl \
+	 \
+	 \
+	 \
+	 \
+	 \
+	 dut.cc
+
+stratus_hls 21.20-p100  (96289.240513)
+Copyright (c) 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, DPO_REGION=1, BDW_RTL_dut_DPO_REGION=1, LAT=2,
+        00481.   DPOPT_ALL".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include,
+        00481.   /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include,
+        00481.   /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "delay".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --characterize_with_driver is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "5.000".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.500".
+        00481: --default_input_delay is not set.
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "op".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "all".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is not set.
+        00481: --fpga_tool is not set.
+        00481: --fpga_use_dsp is set to "off".
+        00481: --fuse_loops is set to "on".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "DPO_REGION".
+        00481: --hls_module is set to "dut".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "on".
+        00481: --inline_partial_constants is set to "on".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/dut/DPO_REGION/stratus_hls.log".
+        00481: --lsb_trimming is set to "on".
+        00481: --message_detail is set to "1".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "dut_rtl.cc".
+        00481: --output_dir is set to "bdw_work/modules/dut/DPO_REGION".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "off".
+        00481: --output_style_reset_all_async is set to "off".
+        00481: --output_style_reset_all_sync is set to "off".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_debug is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --output_style_verbose_names is set to "off".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is not set.
+        00481: --parts_lib_path is not set.
+        00481: --path_delay_limit is set to "111".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "off".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --require_pipeline_boundary_wait is set to "on".
+        00481: --rtl_annotation is set to "op,stack".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "off".
+        00481: --sched_effort is set to "medium".
+        00481: --sched_optim_slack is set to "none".
+        00481: --sharing_effort_parts is set to "high".
+        00481: --sharing_effort_regs is set to "high".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "dut.cc".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --synthesize_asserts is set to "off".
+        00481: --tech_lib is set to "/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --undef_func is set to "error".
+        00481: --unroll_loops is set to "off".
+        00481: --unsupported_lib_func is set to "error".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wireload is not set.
+   NOTE 03065: Control flow zipping is enabled
+   NOTE 01483: Using cmdesigner 21.05.01.8348 (09020908).
+   NOTE 01727: Using Genus 19.16-s111_1.
+
+        01425: Loading design and library files:
+        01279:   All time values are in "ns".
+   NOTE 01277:   Using a clock period of 4.500ns (5.000ns less 0.500ns slack).
+        01824:     Physical estimation options:
+        01825:       interconnect_mode .......... wireload
+        01825:       techlib ....................
+        01825.         /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib
+        00967:   Processing library
+        02788:       Using cached results for cyn_reg_estimate
+        01472:       Register Metrics:
+        01440:          Register Type          Area              Delay (ns)
+        01440.         --------------   -------------------   ---------------
+        01440.         EN SS SC AS AC   Total   Comb    Seq     Prop    Setup
+        01440.         -- -- -- -- --   -----  -----  -----   ------   ------
+        01438:          0  0  0  0  0     5.5    0.0    5.5    0.114    0.066
+        01438:          0  0  0  0  1     6.2    0.0    6.2    0.131    0.067
+        01438:          0  0  0  1  0     6.5    0.0    6.5    0.127    0.067
+        01438:          0  0  0  1  1    12.0    0.7   11.3    0.141    0.098
+        01438:          0  0  1  0  0     6.8    1.4    5.5    0.114    0.123
+        01438:          0  0  1  0  1     7.5    1.4    6.2    0.131    0.125
+        01438:          0  0  1  1  0     7.9    1.0    6.8    0.161    0.089
+        01438:          0  0  1  1  1    12.3    1.0   11.3    0.141    0.106
+        01438:          0  1  0  0  0     6.8    1.4    5.5    0.114    0.104
+        01438:          0  1  0  0  1     7.5    1.4    6.2    0.131    0.105
+        01438:          0  1  0  1  0     7.9    1.0    6.8    0.161    0.100
+        01438:          0  1  0  1  1    12.3    1.0   11.3    0.141    0.115
+        01438:          0  1  1  0  0     7.5    2.1    5.5    0.114    0.147
+        01438:          0  1  1  0  1     8.2    2.1    6.2    0.131    0.149
+        01438:          0  1  1  1  0     8.6    1.7    6.8    0.161    0.111
+        01438:          0  1  1  1  1    13.0    1.7   11.3    0.141    0.127
+        01438:          1  0  0  0  0     7.9    2.4    5.5    0.116    0.141
+        01438:          1  0  0  0  1     8.6    2.4    6.2    0.133    0.143
+        01438:          1  0  0  1  0     8.9    2.4    6.5    0.129    0.143
+        01438:          1  0  0  1  1    13.7    2.4   11.3    0.143    0.133
+        01438:          1  0  1  0  0     9.2    3.8    5.5    0.116    0.197
+        01438:          1  0  1  0  1     9.9    3.8    6.2    0.133    0.198
+        01438:          1  0  1  1  0     9.9    3.1    6.8    0.164    0.156
+        01438:          1  0  1  1  1    14.4    3.1   11.3    0.146    0.182
+        01438:          1  1  0  0  0     9.2    3.8    5.5    0.116    0.177
+        01438:          1  1  0  0  1     9.9    3.8    6.2    0.133    0.179
+        01438:          1  1  0  1  0    10.3    3.8    6.5    0.129    0.189
+        01438:          1  1  0  1  1    15.0    3.8   11.3    0.143    0.185
+        01438:          1  1  1  0  0     9.6    4.1    5.5    0.117    0.190
+        01438:          1  1  1  0  1    10.3    4.1    6.2    0.134    0.192
+        01438:          1  1  1  1  0    10.6    4.1    6.5    0.130    0.192
+        01438:          1  1  1  1  1    15.7    4.4   11.3    0.143    0.209
+   NOTE 01037:     Characterizing multiplexors up to 1 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate
+
+        00148: Normalization and optimization:
+   NOTE 00860:   Long int data types are being implemented with 64 bits.
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 365 function calls.
+
+WARNING 02883: at dut.cc line 56
+WARNING 02883.   Scheduling directives within HLS_DPOPT_REGION blocks may cause
+WARNING 02883.   multiple parts to be created.
+
+WARNING 02883: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 02883.   line 1444
+WARNING 02883.   Scheduling directives within HLS_DPOPT_REGION blocks may cause
+WARNING 02883.   multiple parts to be created.
+
+WARNING 02883: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 02883.   line 1585
+WARNING 02883.   Scheduling directives within HLS_DPOPT_REGION blocks may cause
+WARNING 02883.   multiple parts to be created.
+
+WARNING 02883: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 02883.   line 1620
+WARNING 02883.   Scheduling directives within HLS_DPOPT_REGION blocks may cause
+WARNING 02883.   multiple parts to be created.
+
+WARNING 02883: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 02883.   line 1573
+WARNING 02883.   Scheduling directives within HLS_DPOPT_REGION blocks may cause
+WARNING 02883.   multiple parts to be created.
+
+WARNING 02883: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 02883.   line 1613
+WARNING 02883.   Scheduling directives within HLS_DPOPT_REGION blocks may cause
+WARNING 02883.   multiple parts to be created.
+
+WARNING 02883: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 02883.   line 1532
+WARNING 02883.   Scheduling directives within HLS_DPOPT_REGION blocks may cause
+WARNING 02883.   multiple parts to be created.
+
+        01351:   at dut.cc line 29
+        01351.     Preprocessing thread dut::thread1
+        00116:   at dut.cc line 29
+        00116.     Optimizing thread dut::thread1
+        00305:     668 nodes
+        00306:     Optimize: pass 1.
+        00305:     605 nodes
+        00306:     Optimize: pass 2.
+        00305:     601 nodes
+        00306:     Optimize: pass 3...
+        00305:     603 nodes
+        00306:     Optimize: pass 4.
+        00288:     at dut.cc line 60
+        00288.       Unrolling loop 8 times because it is in a dpopt part.
+        00305:     2813 nodes
+        00306:     Optimize: pass 5..
+        00305:     2048 nodes
+        00306:     Optimize: pass 6..
+        00305:     2045 nodes
+        00306:     Optimize: pass 7.
+        00258:       at dut.cc line 49
+        00258.         Array dp, 8 words x 16 bits (128 total bits), HAS been
+        00258.         flattened into 8, 16 bit scalar variables because
+        00258.         --flatten_array is not set to "none".
+        00305:     1967 nodes
+        00306:     Optimize: pass 8...
+        00305:     1960 nodes
+        00306:     Optimize: pass 9.
+        00288:     at dut.cc line 59
+        00288.       Unrolling loop 8 times because it is in a dpopt part.
+        00305:     15419 nodes
+        00306:     Optimize: pass 10....
+        00305:     13557 nodes
+        00306:     Optimize: pass 11..
+        00305:     13537 nodes
+        00306:     Optimize: pass 12.
+        00305:     13537 nodes
+        00306:     Optimize: pass 13.
+        00305:     13537 nodes
+        00306:     Optimize: pass 14.
+        02831:       at dut.cc line 62
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        00305:     11625 nodes
+        00306:     Optimize: pass 15..
+        00305:     11262 nodes
+        00306:     Optimize: pass 16.
+        00305:     11198 nodes
+        00306:     Optimize: pass 17..
+        00305:     11070 nodes
+        00306:     Optimize: pass 18.
+        00305:     11068 nodes
+        00306:     Optimize: pass 19.
+
+WARNING 00503: at dut.cc line 53
+WARNING 00503.   Not able to remove all control from HLS_DPOPT_REGION part
+WARNING 00503.   'entirecomputation'. This may result in multiple parts being
+WARNING 00503.   created.
+
+   NOTE 00495:     at dut.cc line 53
+   NOTE 00495.       At least one instance of part, entirecomputation, has no
+   NOTE 00495.       [non-wire] operations [after optimizations]. No
+   NOTE 00495.       entirecomputation part is instantiated for such instances.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [0]())
+WARNING 00501.     called from line 60 (in [0]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00494:       at dut.cc line 53
+   NOTE 00494.         Created dpopt part for "entirecomputation".
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+   NOTE 00492.         line 1615 and at dut.cc line 62). Creating new part name
+   NOTE 00492.         "entirecomputation_alt0" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [1]())
+WARNING 00501.     called from line 60 (in [0]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 62 and at dut.cc line 62). Creating new part
+   NOTE 00492.         name "entirecomputation_alt1" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [2]())
+WARNING 00501.     called from line 60 (in [0]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [3]())
+WARNING 00501.     called from line 60 (in [0]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [4]())
+WARNING 00501.     called from line 60 (in [0]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [5]())
+WARNING 00501.     called from line 60 (in [0]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [6]())
+WARNING 00501.     called from line 60 (in [0]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [7]())
+WARNING 00501.     called from line 60 (in [0]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [0]())
+WARNING 00501.     called from line 60 (in [1]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [1]())
+WARNING 00501.     called from line 60 (in [1]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 62 and at dut.cc line 62). Creating new part
+   NOTE 00492.         name "entirecomputation_alt2" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [2]())
+WARNING 00501.     called from line 60 (in [1]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt3" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [3]())
+WARNING 00501.     called from line 60 (in [1]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt4" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [4]())
+WARNING 00501.     called from line 60 (in [1]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt5" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [5]())
+WARNING 00501.     called from line 60 (in [1]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt6" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [6]())
+WARNING 00501.     called from line 60 (in [1]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt7" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [7]())
+WARNING 00501.     called from line 60 (in [1]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt8" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [0]())
+WARNING 00501.     called from line 60 (in [2]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [1]())
+WARNING 00501.     called from line 60 (in [2]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [2]())
+WARNING 00501.     called from line 60 (in [2]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt9" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [3]())
+WARNING 00501.     called from line 60 (in [2]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt10" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [4]())
+WARNING 00501.     called from line 60 (in [2]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt11" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [5]())
+WARNING 00501.     called from line 60 (in [2]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt12" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [6]())
+WARNING 00501.     called from line 60 (in [2]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt13" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [7]())
+WARNING 00501.     called from line 60 (in [2]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt14" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [0]())
+WARNING 00501.     called from line 60 (in [3]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [1]())
+WARNING 00501.     called from line 60 (in [3]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [2]())
+WARNING 00501.     called from line 60 (in [3]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [3]())
+WARNING 00501.     called from line 60 (in [3]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [4]())
+WARNING 00501.     called from line 60 (in [3]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [5]())
+WARNING 00501.     called from line 60 (in [3]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [6]())
+WARNING 00501.     called from line 60 (in [3]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [7]())
+WARNING 00501.     called from line 60 (in [3]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt15" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [0]())
+WARNING 00501.     called from line 60 (in [4]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [1]())
+WARNING 00501.     called from line 60 (in [4]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [2]())
+WARNING 00501.     called from line 60 (in [4]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [3]())
+WARNING 00501.     called from line 60 (in [4]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [4]())
+WARNING 00501.     called from line 60 (in [4]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [5]())
+WARNING 00501.     called from line 60 (in [4]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [6]())
+WARNING 00501.     called from line 60 (in [4]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [7]())
+WARNING 00501.     called from line 60 (in [4]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt16" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [0]())
+WARNING 00501.     called from line 60 (in [5]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [1]())
+WARNING 00501.     called from line 60 (in [5]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [2]())
+WARNING 00501.     called from line 60 (in [5]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [3]())
+WARNING 00501.     called from line 60 (in [5]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [4]())
+WARNING 00501.     called from line 60 (in [5]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [5]())
+WARNING 00501.     called from line 60 (in [5]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [6]())
+WARNING 00501.     called from line 60 (in [5]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [7]())
+WARNING 00501.     called from line 60 (in [5]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt17" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [0]())
+WARNING 00501.     called from line 60 (in [6]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [1]())
+WARNING 00501.     called from line 60 (in [6]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [2]())
+WARNING 00501.     called from line 60 (in [6]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [3]())
+WARNING 00501.     called from line 60 (in [6]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [4]())
+WARNING 00501.     called from line 60 (in [6]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [5]())
+WARNING 00501.     called from line 60 (in [6]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [6]())
+WARNING 00501.     called from line 60 (in [6]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [7]())
+WARNING 00501.     called from line 60 (in [6]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt18" instead.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [0]())
+WARNING 00501.     called from line 60 (in [7]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [1]())
+WARNING 00501.     called from line 60 (in [7]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [2]())
+WARNING 00501.     called from line 60 (in [7]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [3]())
+WARNING 00501.     called from line 60 (in [7]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [4]())
+WARNING 00501.     called from line 60 (in [7]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [5]())
+WARNING 00501.     called from line 60 (in [7]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [6]())
+WARNING 00501.     called from line 60 (in [7]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+WARNING 00501: at /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include/cynw_p2p.h
+WARNING 00501.   line 1461 (in get())
+WARNING 00501.     called from dut.cc line 61 (in [7]())
+WARNING 00501.     called from line 60 (in [7]())
+WARNING 00501.     called from line 59
+WARNING 00501.   This kind of statement is not supported within a
+WARNING 00501.   HLS_DPOPT_REGION directive.  The HLS_DPOPT_REGION directive at
+WARNING 00501.   dut.cc line 53 is ignored.
+
+   NOTE 00492:       at dut.cc line 53
+   NOTE 00492.         Not reusing dpopt part "entirecomputation" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         dut.cc line 65 and at dut.cc line 65). Creating new part
+   NOTE 00492.         name "entirecomputation_alt19" instead.
+        00305:     9461 nodes
+        00306:     Optimize: pass 20..
+        00305:     9419 nodes
+        00306:     Optimize: pass 21.
+        00305:     9611 nodes
+        00306:     Optimize: pass 22.
+        00305:     9611 nodes
+        00306:     Optimize: pass 23.
+        00289:       at dut.cc line 40
+        00289.         This loop is not being unrolled because no unrolling was
+        00289.         specified.
+               ....................................................................................................
+               .......................................................
+        01352:   at dut.cc line 29
+        01352.     Postprocessing thread dut::thread1
+   NOTE 00487: Created 7 dpopt operator parts
+
+        00182: Initial resource mapping:
+   NOTE 01037:     Characterizing multiplexors up to 32 bits by 128 inputs.
+        02788:       Using cached results for cyn_mux_estimate_1
+        00968:   Matching resources
+        02788:       Using cached results for dut_Not_1U_1U_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+        02788:       Using cached results for dut_Xor_1Ux1U_1U_4
+        02790:         Area =     2.74  Latency = 0  Delay =    0.107ns
+        02788:       Using cached results for dut_Or_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for dut_And_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for dut_gen_busy_r_4
+        02790:         Area =     4.10  Latency = 0  Delay =    0.165ns
+        02788:       Using cached results for dut_N_Muxb_1_2_6_4
+        02790:         Area =     2.39  Latency = 0  Delay =    0.090ns
+        02723:       Synthesizing dut_entirecomputation_alt19_4...
+   NOTE 03266:       Ignoring scan cells: SDFFHQX1 SDFFHQX2 SDFFHQX4 SDFFHQX8
+   NOTE 03266.         SDFFNSRX1 SDFFNSRX2 SDFFNSRX4 SDFFNSRXL SDFFQX1 SDFFQX2
+   NOTE 03266.         SDFFQX4 SDFFQXL SDFFRHQX1 SDFFRHQX2 SDFFRHQX4 SDFFRHQX8
+   NOTE 03266.         SDFFRX1 SDFFRX2 SDFFRX4 SDFFRXL SDFFSHQX1 SDFFSHQX2
+   NOTE 03266.         SDFFSHQX4 SDFFSHQX8 SDFFSRHQX1 SDFFSRHQX2 SDFFSRHQX4
+   NOTE 03266.         SDFFSRHQX8 SDFFSRX1 SDFFSRX2 SDFFSRX4 SDFFSRXL SDFFSX1
+   NOTE 03266.         SDFFSX2 SDFFSX4 SDFFSXL SDFFTRX1 SDFFTRX2 SDFFTRX4
+   NOTE 03266.         SDFFTRXL SDFFX1 SDFFX2 SDFFX4 SDFFXL SEDFFX1 SEDFFX2
+   NOTE 03266.         SEDFFX4 SEDFFXL
+
+   NOTE 00171: No wireload models present in technology library,
+   NOTE 00171.   /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib.
+
+   NOTE 00198: No wire load model is being used.
+
+        02790:         Area =   126.20  Latency = 0  Delay =    0.742ns
+        02723:       Synthesizing dut_entirecomputation_alt18_4...
+        02790:         Area =   119.36  Latency = 0  Delay =    0.705ns
+        02723:       Synthesizing dut_entirecomputation_alt8_4...
+        02790:         Area =    37.96  Latency = 0  Delay =    0.498ns
+        02723:       Synthesizing dut_entirecomputation_alt17_4...
+        02790:         Area =   101.92  Latency = 0  Delay =    0.746ns
+        02723:       Synthesizing dut_entirecomputation_alt16_4...
+        02790:         Area =    95.42  Latency = 0  Delay =    0.625ns
+        02723:       Synthesizing dut_entirecomputation_alt15_4...
+        02790:         Area =    83.11  Latency = 0  Delay =    0.635ns
+        02723:       Synthesizing dut_entirecomputation_alt14_4...
+        02790:         Area =    76.27  Latency = 0  Delay =    0.561ns
+        02723:       Synthesizing dut_entirecomputation_alt13_4...
+        02790:         Area =    58.48  Latency = 0  Delay =    0.660ns
+        02723:       Synthesizing dut_entirecomputation_alt12_4...
+        02790:         Area =    51.98  Latency = 0  Delay =    0.507ns
+        02723:       Synthesizing dut_entirecomputation_alt11_4...
+        02790:         Area =    38.99  Latency = 0  Delay =    0.525ns
+        02723:       Synthesizing dut_entirecomputation_alt10_4...
+        02790:         Area =    32.49  Latency = 0  Delay =    0.376ns
+        02723:       Synthesizing dut_entirecomputation_alt9_4...
+        02790:         Area =    19.49  Latency = 0  Delay =    0.393ns
+        02723:       Synthesizing dut_entirecomputation_alt7_4...
+        02790:         Area =    33.17  Latency = 0  Delay =    0.435ns
+        02723:       Synthesizing dut_entirecomputation_alt6_4...
+        02790:         Area =    27.36  Latency = 0  Delay =    0.377ns
+        02723:       Synthesizing dut_entirecomputation_alt5_4...
+        02790:         Area =    22.57  Latency = 0  Delay =    0.317ns
+        02723:       Synthesizing dut_entirecomputation_alt4_4...
+        02790:         Area =    16.76  Latency = 0  Delay =    0.256ns
+        02723:       Synthesizing dut_entirecomputation_alt3_4...
+        02790:         Area =    11.63  Latency = 0  Delay =    0.204ns
+        02723:       Synthesizing dut_entirecomputation_alt2_4...
+        02790:         Area =     6.50  Latency = 0  Delay =    0.163ns
+        02723:       Synthesizing dut_entirecomputation_alt1_4...
+        02790:         Area =     1.37  Latency = 0  Delay =    0.063ns
+        02723:       Synthesizing dut_entirecomputation_alt0_4...
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+        02723:       Synthesizing dut_entirecomputation_4...
+        02790:         Area =     0.00  Latency = 0  Delay =    0.000ns
+        02788:       Using cached results for dut_Not_1U_1U_1
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+        02788:       Using cached results for dut_Xor_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for dut_Or_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.051ns
+        02788:       Using cached results for dut_And_1Ux1U_1U_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.046ns
+        02788:       Using cached results for dut_gen_busy_r_1
+        02790:         Area =    18.47  Latency = 0  Delay =    0.101ns
+        02788:       Using cached results for dut_entirecomputation_alt0_1
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+        02788:       Using cached results for dut_N_Muxb_1_2_6_1
+        02790:         Area =    11.75  Latency = 0  Delay =    0.060ns
+        02723:       Synthesizing dut_entirecomputation_alt19_1...
+        02790:         Area =   199.51  Latency = 0  Delay =    0.365ns
+        02723:       Synthesizing dut_entirecomputation_alt18_1...
+        02790:         Area =   181.72  Latency = 0  Delay =    0.364ns
+        02723:       Synthesizing dut_entirecomputation_alt8_1...
+        02790:         Area =    58.94  Latency = 0  Delay =    0.253ns
+        02723:       Synthesizing dut_entirecomputation_alt17_1...
+        02790:         Area =   154.99  Latency = 0  Delay =    0.359ns
+        02723:       Synthesizing dut_entirecomputation_alt16_1...
+        02790:         Area =   162.57  Latency = 0  Delay =    0.351ns
+        02723:       Synthesizing dut_entirecomputation_alt15_1...
+        02790:         Area =   141.66  Latency = 0  Delay =    0.313ns
+        02723:       Synthesizing dut_entirecomputation_alt14_1...
+        02790:         Area =   116.01  Latency = 0  Delay =    0.307ns
+        02723:       Synthesizing dut_entirecomputation_alt13_1...
+        02790:         Area =   103.40  Latency = 0  Delay =    0.301ns
+        02723:       Synthesizing dut_entirecomputation_alt12_1...
+        02790:         Area =    92.46  Latency = 0  Delay =    0.302ns
+        02723:       Synthesizing dut_entirecomputation_alt11_1...
+        02790:         Area =    67.84  Latency = 0  Delay =    0.247ns
+        02723:       Synthesizing dut_entirecomputation_alt10_1...
+        02790:         Area =    49.03  Latency = 0  Delay =    0.238ns
+        02723:       Synthesizing dut_entirecomputation_alt9_1...
+        02790:         Area =    39.79  Latency = 0  Delay =    0.196ns
+        02723:       Synthesizing dut_entirecomputation_alt7_1...
+        02790:         Area =    52.45  Latency = 0  Delay =    0.252ns
+        02723:       Synthesizing dut_entirecomputation_alt6_1...
+        02790:         Area =    39.45  Latency = 0  Delay =    0.207ns
+        02723:       Synthesizing dut_entirecomputation_alt5_1...
+        02790:         Area =    36.03  Latency = 0  Delay =    0.198ns
+        02723:       Synthesizing dut_entirecomputation_alt4_1...
+        02790:         Area =    25.43  Latency = 0  Delay =    0.193ns
+        02723:       Synthesizing dut_entirecomputation_alt3_1...
+        02790:         Area =    16.88  Latency = 0  Delay =    0.139ns
+        02723:       Synthesizing dut_entirecomputation_alt2_1...
+        02790:         Area =    10.94  Latency = 0  Delay =    0.121ns
+        02723:       Synthesizing dut_entirecomputation_alt1_1...
+        02790:         Area =     7.18  Latency = 0  Delay =    0.039ns
+
+        00969: Scheduling:...............
+        01171:   Scheduling thread dut::thread1
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02080:       sched_optim_slack     none    
+        02080:       timing_analysis       on      
+        00907: ................................................................
+        00907: . Loop carried dependencies report for loop:     dut.cc:40,2   .
+        00907: .                                                              .
+        00907: . <No loop carried dependencies found>                         .
+        00907: ................................................................
+        02098:     Total op count: 520
+        03257:     Sharable op count: 94
+        01170:     Unsharable op count: 426
+        01166:     Estimated intrinsic mux area: 0
+        01158:     Checking feasibility of constraints
+   NOTE 01254:     Adjusting part timing and restarting schedule.
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+        02723:       Synthesizing dut_entirecomputation_alt19_0...
+        02790:         Area =   390.89  Latency = 0  Delay =    0.261ns
+        02723:       Synthesizing dut_entirecomputation_alt18_0...
+        02790:         Area =   468.52  Latency = 0  Delay =    0.242ns
+        02723:       Synthesizing dut_entirecomputation_alt8_0...
+        02790:         Area =   129.74  Latency = 0  Delay =    0.148ns
+        02723:       Synthesizing dut_entirecomputation_alt17_0...
+        02790:         Area =   334.65  Latency = 0  Delay =    0.254ns
+        02723:       Synthesizing dut_entirecomputation_alt16_0...
+        02790:         Area =   419.45  Latency = 0  Delay =    0.225ns
+        02723:       Synthesizing dut_entirecomputation_alt15_0...
+        02790:         Area =   316.42  Latency = 0  Delay =    0.229ns
+        02723:       Synthesizing dut_entirecomputation_alt14_0...
+        02790:         Area =   279.84  Latency = 0  Delay =    0.210ns
+        02723:       Synthesizing dut_entirecomputation_alt13_0...
+        02790:         Area =   313.48  Latency = 0  Delay =    0.198ns
+        02723:       Synthesizing dut_entirecomputation_alt12_0...
+        02790:         Area =   160.98  Latency = 0  Delay =    0.208ns
+        02723:       Synthesizing dut_entirecomputation_alt11_0...
+        02790:         Area =   158.11  Latency = 0  Delay =    0.184ns
+        02723:       Synthesizing dut_entirecomputation_alt10_0...
+        02790:         Area =    98.94  Latency = 0  Delay =    0.161ns
+        02723:       Synthesizing dut_entirecomputation_alt9_0...
+        02790:         Area =    66.55  Latency = 0  Delay =    0.148ns
+        02723:       Synthesizing dut_entirecomputation_alt7_0...
+        02790:         Area =   111.17  Latency = 0  Delay =    0.134ns
+        02723:       Synthesizing dut_entirecomputation_alt6_0...
+        02790:         Area =    95.06  Latency = 0  Delay =    0.129ns
+        02723:       Synthesizing dut_entirecomputation_alt5_0...
+        02790:         Area =    63.51  Latency = 0  Delay =    0.122ns
+        02723:       Synthesizing dut_entirecomputation_alt4_0...
+        02790:         Area =    41.57  Latency = 0  Delay =    0.107ns
+        02723:       Synthesizing dut_entirecomputation_alt3_0...
+        02790:         Area =    53.61  Latency = 0  Delay =    0.096ns
+        02723:       Synthesizing dut_entirecomputation_alt2_0...
+        02790:         Area =    21.68  Latency = 0  Delay =    0.084ns
+        02723:       Synthesizing dut_entirecomputation_alt1_0...
+        02790:         Area =     7.18  Latency = 0  Delay =    0.039ns
+        02723:       Synthesizing dut_entirecomputation_alt0_0...
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+   NOTE 01254:     Adjusting part timing and restarting schedule.
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 3
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 4
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 5
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 6
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 7
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 8
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 9
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 10
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 11
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 12
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 13
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 14
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 15
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 16
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 17
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 18
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 19
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 20
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 21
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 22
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 23
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 24
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 25
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 26
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 27
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 28
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 29
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 30
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 31
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 32
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 33
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 34
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 35
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 36
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 37
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 38
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 39
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 40
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 41
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 42
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 43
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 44
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 45
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 46
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 47
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 48
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 49
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 50
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 51
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 52
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 53
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 54
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 55
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 56
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 57
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 58
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 59
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 60
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 61
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 62
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 63
+   NOTE 01252:     Recharacterizing library to try to meet constraints
+   NOTE 01258: Incrementing latency constraint "computation" to 64
+
+   NOTE 00009: Failed to find a valid schedule, entering failure analysis
+   NOTE 00009.   phase.
+
+        00197: #############################[ Latency Violation ]############################
+        00197:                                                                               
+        00197: Latency constraint "computation" was relaxed from 2 to 64 to find a schedule  
+        00197: See User Guide section titled "Latency and Protocol Blocks Errors."           
+        00197: The addition of the following cycle(s):                                       
+        00197: [ Cycle 3   (VIOL_5) ]                                                         
+        00197: [ Cycle 4   (VIOL_6) ]                                                         
+        00197: [ Cycle 5   (VIOL_7) ]                                                         
+        00197: [ Cycle 6   (VIOL_8) ]                                                         
+        00197: [ Cycle 7   (VIOL_9) ]                                                         
+        00197: [ Cycle 8   (VIOL_10) ]                                                        
+        00197: [ Cycle 9   (VIOL_11) ]                                                        
+        00197: [ Cycle 10   (VIOL_12) ]                                                       
+        00197: [ Cycle 11   (VIOL_13) ]                                                       
+        00197: [ Cycle 12   (VIOL_14) ]                                                       
+        00197: [ Cycle 13   (VIOL_15) ]                                                       
+        00197: [ Cycle 14   (VIOL_16) ]                                                       
+        00197: [ Cycle 15   (VIOL_17) ]                                                       
+        00197: [ Cycle 16   (VIOL_11)   (VIOL_18) ]                                            
+        00197: [ Cycle 17   (VIOL_19) ]                                                       
+        00197: [ Cycle 18   (VIOL_20) ]                                                       
+        00197: [ Cycle 19   (VIOL_21) ]                                                       
+        00197: [ Cycle 20   (VIOL_22) ]                                                       
+        00197: [ Cycle 21   (VIOL_23) ]                                                       
+        00197: [ Cycle 22   (VIOL_24) ]                                                       
+        00197: [ Cycle 23   (VIOL_25) ]                                                       
+        00197: [ Cycle 24   (VIOL_19)   (VIOL_26) ]                                            
+        00197: [ Cycle 25   (VIOL_27) ]                                                       
+        00197: [ Cycle 26   (VIOL_28) ]                                                       
+        00197: [ Cycle 27   (VIOL_29) ]                                                       
+        00197: [ Cycle 28   (VIOL_30) ]                                                       
+        00197: [ Cycle 29   (VIOL_31) ]                                                       
+        00197: [ Cycle 30   (VIOL_32) ]                                                       
+        00197: [ Cycle 31   (VIOL_33) ]                                                       
+        00197: [ Cycle 32   (VIOL_27)   (VIOL_34) ]                                            
+        00197: [ Cycle 33   (VIOL_35) ]                                                       
+        00197: [ Cycle 34   (VIOL_36) ]                                                       
+        00197: [ Cycle 35   (VIOL_37) ]                                                       
+        00197: [ Cycle 36   (VIOL_38) ]                                                       
+        00197: [ Cycle 37   (VIOL_39) ]                                                       
+        00197: [ Cycle 38   (VIOL_40) ]                                                       
+        00197: [ Cycle 39   (VIOL_41) ]                                                       
+        00197: [ Cycle 40   (VIOL_35)   (VIOL_42) ]                                            
+        00197: [ Cycle 41   (VIOL_43) ]                                                       
+        00197: [ Cycle 42   (VIOL_44) ]                                                       
+        00197: [ Cycle 43   (VIOL_45) ]                                                       
+        00197: [ Cycle 44   (VIOL_46) ]                                                       
+        00197: [ Cycle 45   (VIOL_47) ]                                                       
+        00197: [ Cycle 46   (VIOL_48) ]                                                       
+        00197: [ Cycle 47   (VIOL_49) ]                                                       
+        00197: [ Cycle 48   (VIOL_43)   (VIOL_50) ]                                            
+        00197: [ Cycle 49   (VIOL_51) ]                                                       
+        00197: [ Cycle 50   (VIOL_52) ]                                                       
+        00197: [ Cycle 51   (VIOL_53) ]                                                       
+        00197: [ Cycle 52   (VIOL_54) ]                                                       
+        00197: [ Cycle 53   (VIOL_55) ]                                                       
+        00197: [ Cycle 54   (VIOL_56) ]                                                       
+        00197: [ Cycle 55   (VIOL_57) ]                                                       
+        00197: [ Cycle 56   (VIOL_51)   (VIOL_58) ]                                            
+        00197: [ Cycle 57   (VIOL_59) ]                                                       
+        00197: [ Cycle 58   (VIOL_60) ]                                                       
+        00197: [ Cycle 59   (VIOL_61) ]                                                       
+        00197: [ Cycle 60   (VIOL_62) ]                                                       
+        00197: [ Cycle 61   (VIOL_63) ]                                                       
+        00197: [ Cycle 62   (VIOL_64) ]                                                       
+        00197: [ Cycle 63   (VIOL_65) ]                                                       
+        00197: [ Cycle 64   (VIOL_66) ]                                                       
+        00197: Violated this latency constraint                                              
+        00197: Found 3 path(s) that caused violation                                         
+        00197:                                                                               
+        00197: Clock period          :    5.000  
+        00197: Cycle slack           :    0.500  
+        00197: --------------------------------  
+        00197: Effective clock period:    4.500  
+        00197:                                   
+        00197: ******************************[ Violator Path 1 ]*****************************
+        00197:                                                                               
+        00197:                                                                       
+        00197: *** Protocol block "reset" ***                                        
+        00197:                                                                       
+        00197: ------------------------------[ Cycle 1 ]-----------------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ------------------------------[ Cycle 2 ]-----------------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 3 !!! VIOLATION !!! ]--------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 4 !!! VIOLATION !!! ]--------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 5 !!! VIOLATION !!! ]--------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 6 !!! VIOLATION !!! ]--------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 7 !!! VIOLATION !!! ]--------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 8 !!! VIOLATION !!! ]--------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP42   dut.cc:61,14  < din_data: input port >           0.114  0.114  
+        00197: OP43   dut.cc:53,8   dut_entirecomputation_4.in1        0.000  0.114  
+        00197: OP46   dut.cc:53,8   dut_entirecomputation_alt0_1.in1   0.019  0.133  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.260  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 9 !!! VIOLATION !!! ]--------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 10 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 11 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 12 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 13 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 14 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 15 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 16 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP109  dut.cc:53,8   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.280  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 17 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 18 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 19 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 20 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 21 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 22 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 23 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 24 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP172  dut.cc:53,8   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.280  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 25 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 26 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 27 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 28 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 29 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 30 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 31 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 32 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP235  dut.cc:53,8   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.280  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 33 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 34 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 35 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 36 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 37 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 38 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 39 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 40 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP298  dut.cc:53,8   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.280  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 41 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 42 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 43 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 44 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 45 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 46 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 47 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 48 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP361  dut.cc:53,8   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.280  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 49 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 50 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 51 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 52 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 53 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 54 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 55 !!! VIOLATION !!! ]-------------------
+        00197:                                                                       
+        00197: *** Protocol block "cynw_p2p_in_get" ***                              
+        00197:                                                                       
+        00197: ---------------------[ Cycle 56 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP424  dut.cc:53,8   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.280  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 57 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP536  dut.cc:53,8   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.280  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 58 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP537  dut.cc:53,8   dut_entirecomputation_alt8_0.in2   0.148  0.262  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.389  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 59 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP538  dut.cc:53,8   dut_entirecomputation_alt14_0.in3  0.210  0.324  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.451  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 60 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP539  dut.cc:53,8   dut_entirecomputation_alt15_0.in3  0.229  0.343  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.470  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 61 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP540  dut.cc:53,8   dut_entirecomputation_alt16_0.in3  0.225  0.339  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.466  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 62 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP541  dut.cc:53,8   dut_entirecomputation_alt17_0.in3  0.254  0.367  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.494  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 63 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP542  dut.cc:53,8   dut_entirecomputation_alt18_0.in3  0.242  0.356  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.483  
+        00197:                                                                       
+        00197: ---------------------[ Cycle 64 !!! VIOLATION !!! ]-------------------
+        00197: OP ID  Source        Resource                           Incr   Accum  
+        00197:                                                                       
+        00197: OP550  dut.cc:53,8   dut_entirecomputation_alt19_0.in3  0.261  0.375  
+        00197: DFFD                 DFF (Tsu)                          0.127  0.502  
+        00197:                                                                       
+        00197:                                                                       
+        00197: ======================================================================
+        00197: =========================== Call Stack Table==========================
+        00197: ======================================================================
+        00197:                                                  
+        00197: OP42 Called:                                     
+        00197:           at cynw_p2p.h:1716,20                          
+        00197:           called from cynw_p2p.h:1553,8 (in use_data())  
+        00197:           called from cynw_p2p.h:1476,7 (in nb_get())    
+        00197:           called from dut.cc:61,14 (in get())            
+        00197:           called from cynw_p2p.h:494,43 (in data())      
+        00197:           called from dut.h:41,27 (in din())             
+        00197:           called from dut.cc:60,4 (in [0]())             
+        00197:           called from dut.cc:59,3 (in [0]())             
+        00197:                                                  
+        00197: OP43 Called:                                     
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [0]())  
+        00197:           called from dut.cc:59,3 (in [0]())  
+        00197:                                                  
+        00197: OP46 Called:                                     
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [0]())  
+        00197:           called from dut.cc:59,3 (in [0]())  
+        00197:                                                  
+        00197: OP109 Called:                                    
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [0]())  
+        00197:           called from dut.cc:59,3 (in [1]())  
+        00197:                                                  
+        00197: OP172 Called:                                    
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [0]())  
+        00197:           called from dut.cc:59,3 (in [2]())  
+        00197:                                                  
+        00197: OP235 Called:                                    
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [0]())  
+        00197:           called from dut.cc:59,3 (in [3]())  
+        00197:                                                  
+        00197: OP298 Called:                                    
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [0]())  
+        00197:           called from dut.cc:59,3 (in [4]())  
+        00197:                                                  
+        00197: OP361 Called:                                    
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [0]())  
+        00197:           called from dut.cc:59,3 (in [5]())  
+        00197:                                                  
+        00197: OP424 Called:                                    
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [0]())  
+        00197:           called from dut.cc:59,3 (in [6]())  
+        00197:                                                  
+        00197: OP550 Called:                                    
+        00197:           at dut.cc:53,8                      
+        00197:           called from dut.cc:60,4 (in [7]())  
+        00197:           called from dut.cc:59,3 (in [7]())  
+        00197:                                                  
+        00197: ======================================================================
+        00197: ========================== Cycle Explanation =========================
+        00197: ======================================================================
+        00197: Cycle 1 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:                                                                       
+        00197: Cycle 2 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [1]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:                                                                       
+        00197: Cycle 3 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [2]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:                                                                       
+        00197: Cycle 4 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [3]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:                                                                       
+        00197: Cycle 5 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [4]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:                                                                       
+        00197: Cycle 6 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [5]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:                                                                       
+        00197: Cycle 7 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [6]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:                                                                       
+        00197: Cycle 8 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [7]())   
+        00197:                         called from dut.cc:59,3 (in [0]())   
+        00197:                                                                       
+        00197: Cycle 9 was added because of wait statement in protocol block(s):     
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:                                                                       
+        00197: Cycle 10 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [1]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:                                                                       
+        00197: Cycle 11 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [2]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:                                                                       
+        00197: Cycle 12 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [3]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:                                                                       
+        00197: Cycle 13 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [4]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:                                                                       
+        00197: Cycle 14 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [5]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:                                                                       
+        00197: Cycle 15 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [6]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:                                                                       
+        00197: Cycle 16 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [7]())   
+        00197:                         called from dut.cc:59,3 (in [1]())   
+        00197:                                                                       
+        00197: Cycle 17 was added because of the following resource conflict(s) between OP172 and the previous cycle resources:
+        00197:      OP ID  Resource                          Source       
+        00197:      -----  --------                          ------       
+        00197:      OP109  dut_entirecomputation_alt1_1.in2  dut.cc:53,8  
+        00197:                                                            
+        00197:      HINT: Try adding "wait();" or increasing latency between Op172 and conflicting operations.
+        00197:                                                            
+        00197: Cycle 18 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [1]())   
+        00197:                         called from dut.cc:59,3 (in [2]())   
+        00197:                                                                       
+        00197: Cycle 19 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [2]())   
+        00197:                         called from dut.cc:59,3 (in [2]())   
+        00197:                                                                       
+        00197: Cycle 20 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [3]())   
+        00197:                         called from dut.cc:59,3 (in [2]())   
+        00197:                                                                       
+        00197: Cycle 21 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [4]())   
+        00197:                         called from dut.cc:59,3 (in [2]())   
+        00197:                                                                       
+        00197: Cycle 22 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [5]())   
+        00197:                         called from dut.cc:59,3 (in [2]())   
+        00197:                                                                       
+        00197: Cycle 23 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [6]())   
+        00197:                         called from dut.cc:59,3 (in [2]())   
+        00197:                                                                       
+        00197: Cycle 24 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [2]())   
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [7]())   
+        00197:                         called from dut.cc:59,3 (in [2]())   
+        00197:                                                                       
+        00197: Cycle 25 was added because of the following resource conflict(s) between OP235 and the previous cycle resources:
+        00197:      OP ID  Resource                          Source       
+        00197:      -----  --------                          ------       
+        00197:      OP172  dut_entirecomputation_alt1_1.in2  dut.cc:53,8  
+        00197:                                                            
+        00197:      HINT: Try adding "wait();" or increasing latency between Op235 and conflicting operations.
+        00197:                                                            
+        00197: Cycle 26 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [1]())   
+        00197:                         called from dut.cc:59,3 (in [3]())   
+        00197:                                                                       
+        00197: Cycle 27 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [2]())   
+        00197:                         called from dut.cc:59,3 (in [3]())   
+        00197:                                                                       
+        00197: Cycle 28 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [3]())   
+        00197:                         called from dut.cc:59,3 (in [3]())   
+        00197:                                                                       
+        00197: Cycle 29 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [4]())   
+        00197:                         called from dut.cc:59,3 (in [3]())   
+        00197:                                                                       
+        00197: Cycle 30 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [5]())   
+        00197:                         called from dut.cc:59,3 (in [3]())   
+        00197:                                                                       
+        00197: Cycle 31 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [6]())   
+        00197:                         called from dut.cc:59,3 (in [3]())   
+        00197:                                                                       
+        00197: Cycle 32 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [3]())   
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [7]())   
+        00197:                         called from dut.cc:59,3 (in [3]())   
+        00197:                                                                       
+        00197: Cycle 33 was added because of the following resource conflict(s) between OP298 and the previous cycle resources:
+        00197:      OP ID  Resource                          Source       
+        00197:      -----  --------                          ------       
+        00197:      OP235  dut_entirecomputation_alt1_1.in2  dut.cc:53,8  
+        00197:                                                            
+        00197:      HINT: Try adding "wait();" or increasing latency between Op298 and conflicting operations.
+        00197:                                                            
+        00197: Cycle 34 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [1]())   
+        00197:                         called from dut.cc:59,3 (in [4]())   
+        00197:                                                                       
+        00197: Cycle 35 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [2]())   
+        00197:                         called from dut.cc:59,3 (in [4]())   
+        00197:                                                                       
+        00197: Cycle 36 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [3]())   
+        00197:                         called from dut.cc:59,3 (in [4]())   
+        00197:                                                                       
+        00197: Cycle 37 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [4]())   
+        00197:                         called from dut.cc:59,3 (in [4]())   
+        00197:                                                                       
+        00197: Cycle 38 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [5]())   
+        00197:                         called from dut.cc:59,3 (in [4]())   
+        00197:                                                                       
+        00197: Cycle 39 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [6]())   
+        00197:                         called from dut.cc:59,3 (in [4]())   
+        00197:                                                                       
+        00197: Cycle 40 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [4]())   
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [7]())   
+        00197:                         called from dut.cc:59,3 (in [4]())   
+        00197:                                                                       
+        00197: Cycle 41 was added because of the following resource conflict(s) between OP361 and the previous cycle resources:
+        00197:      OP ID  Resource                          Source       
+        00197:      -----  --------                          ------       
+        00197:      OP298  dut_entirecomputation_alt1_1.in2  dut.cc:53,8  
+        00197:                                                            
+        00197:      HINT: Try adding "wait();" or increasing latency between Op361 and conflicting operations.
+        00197:                                                            
+        00197: Cycle 42 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [1]())   
+        00197:                         called from dut.cc:59,3 (in [5]())   
+        00197:                                                                       
+        00197: Cycle 43 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [2]())   
+        00197:                         called from dut.cc:59,3 (in [5]())   
+        00197:                                                                       
+        00197: Cycle 44 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [3]())   
+        00197:                         called from dut.cc:59,3 (in [5]())   
+        00197:                                                                       
+        00197: Cycle 45 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [4]())   
+        00197:                         called from dut.cc:59,3 (in [5]())   
+        00197:                                                                       
+        00197: Cycle 46 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [5]())   
+        00197:                         called from dut.cc:59,3 (in [5]())   
+        00197:                                                                       
+        00197: Cycle 47 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [6]())   
+        00197:                         called from dut.cc:59,3 (in [5]())   
+        00197:                                                                       
+        00197: Cycle 48 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [5]())   
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [7]())   
+        00197:                         called from dut.cc:59,3 (in [5]())   
+        00197:                                                                       
+        00197: Cycle 49 was added because of the following resource conflict(s) between OP424 and the previous cycle resources:
+        00197:      OP ID  Resource                          Source       
+        00197:      -----  --------                          ------       
+        00197:      OP361  dut_entirecomputation_alt1_1.in2  dut.cc:53,8  
+        00197:                                                            
+        00197:      HINT: Try adding "wait();" or increasing latency between Op424 and conflicting operations.
+        00197:                                                            
+        00197: Cycle 50 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [1]())   
+        00197:                         called from dut.cc:59,3 (in [6]())   
+        00197:                                                                       
+        00197: Cycle 51 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [2]())   
+        00197:                         called from dut.cc:59,3 (in [6]())   
+        00197:                                                                       
+        00197: Cycle 52 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [3]())   
+        00197:                         called from dut.cc:59,3 (in [6]())   
+        00197:                                                                       
+        00197: Cycle 53 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [4]())   
+        00197:                         called from dut.cc:59,3 (in [6]())   
+        00197:                                                                       
+        00197: Cycle 54 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [5]())   
+        00197:                         called from dut.cc:59,3 (in [6]())   
+        00197:                                                                       
+        00197: Cycle 55 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [6]())   
+        00197:                         called from dut.cc:59,3 (in [6]())   
+        00197:                                                                       
+        00197: Cycle 56 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [0]())   
+        00197:                         called from dut.cc:59,3 (in [6]())   
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [7]())   
+        00197:                         called from dut.cc:59,3 (in [6]())   
+        00197:                                                                       
+        00197: Cycle 57 was added because of the following resource conflict(s) between OP536 and the previous cycle resources:
+        00197:      OP ID  Resource                          Source       
+        00197:      -----  --------                          ------       
+        00197:      OP424  dut_entirecomputation_alt1_1.in2  dut.cc:53,8  
+        00197:                                                            
+        00197:      HINT: Try adding "wait();" or increasing latency between Op536 and conflicting operations.
+        00197:                                                            
+        00197: Cycle 58 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [1]())   
+        00197:                         called from dut.cc:59,3 (in [7]())   
+        00197:                                                                       
+        00197: Cycle 59 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [2]())   
+        00197:                         called from dut.cc:59,3 (in [7]())   
+        00197:                                                                       
+        00197: Cycle 60 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [3]())   
+        00197:                         called from dut.cc:59,3 (in [7]())   
+        00197:                                                                       
+        00197: Cycle 61 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [4]())   
+        00197:                         called from dut.cc:59,3 (in [7]())   
+        00197:                                                                       
+        00197: Cycle 62 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [5]())   
+        00197:                         called from dut.cc:59,3 (in [7]())   
+        00197:                                                                       
+        00197: Cycle 63 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [6]())   
+        00197:                         called from dut.cc:59,3 (in [7]())   
+        00197:                                                                       
+        00197: Cycle 64 was added because of wait statement in protocol block(s):    
+        00197:      Directive          Source  
+        00197:      ---------          ------  
+        00197:      "cynw_p2p_in_get"          
+        00197:                         at cynw_p2p.h:1444,7                 
+        00197:                         called from dut.cc:61,14 (in get())  
+        00197:                         called from dut.cc:60,4 (in [7]())   
+        00197:                         called from dut.cc:59,3 (in [7]())   
+        00197:                                                                       
+
+              #################################################################
+              #                                                               #
+  ERROR 01484:# Unable to produce a valid schedule, found 1 Violation(s).     #
+              #                                                               #
+              #################################################################
+
+               .........
+
+              #################################################################
+              #                                                               #
+  ERROR 01196:# Stratus has failed to schedule one or more threads. All       #
+  ERROR 01196.#   threads scheduled after thread1 may or may not be dependent #
+  ERROR 01196.#   on the failed thread.                                       #
+              #                                                               #
+              #################################################################
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:      ERROR 01196   1
+        01198:      ERROR 01484   1
+        01198:    WARNING 00501  64
+        01198:    WARNING 00503   1
+        01198:    WARNING 02883   7
+
+stratus_hls failed with 2 errors and 72 warnings.
+
+make[5]: *** [bdw_work/modules/dut/DPO_REGION/dut_rtl.cc] Error 1

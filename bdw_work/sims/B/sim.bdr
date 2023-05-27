@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<tool_log>
+	<tool_kind>LogicSimulator</tool_kind>
+	<tool_name>OSCI</tool_name>
+	<hostname>ws26</hostname>
+	<uname>Linux 3.10.0-1160.81.1.el7.x86_64 x86_64</uname>
+	<cwd>/home/m111/m111061617/ee6470/stratus/path_count</cwd>
+	<user>m111061617</user>
+	<gen_time>Fri May 26 17:49:58 2023</gen_time>
+	<module_inst>
+		<module_name>dut</module_name>
+		<inst_path>system.dut_wrapper</inst_path>
+		<representation>BEH</representation>
+	</module_inst>
+	<latency>
+		<value>1</value>
+		<module_name>dut</module_name>
+		<name>average_latency</name>
+	</latency>
+	<end_time>Fri May 26 17:49:58 2023</end_time>
+	<passed>1</passed>
+</tool_log>

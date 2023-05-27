@@ -1,0 +1,19 @@
+(module dut_N_Muxb_1_2_4653_4
+  (input in3)
+  (input in2)
+  (input ctrl1)
+  (output out1)
+  {if maxLatencyConstr!=0 {(clock clk)}}
+  (wire asc001 )
+  (wire asc002 )
+  (wire asc003 )
+  (assign asc002  in2)
+  (assign asc003  in3)
+  (mux i1 asc001  ctrl1
+    (input 1  asc002 )
+    (input 0  asc003 )
+  )
+
+  {set has_stall_pin 0}
+  {if maxLatencyConstr!=0 {  (rreg {maxLatencyConstr}  out1_pipe out1  asc001  clk (property cycletime {clkPeriodConstr}) (property minlat 0) (property outdelay {outputDelayAllowance}))} {  (assign out1  asc001  ) }}
+)

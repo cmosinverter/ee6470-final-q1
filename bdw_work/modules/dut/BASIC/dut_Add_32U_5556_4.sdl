@@ -1,0 +1,10 @@
+(module dut_Add_32U_5556_4
+  (input [31:0] in1)
+  (output [31:0] out1)
+  {if maxLatencyConstr!=0 {(clock clk)}}
+  (wire [31:0] asc001 )
+  (sum i1 asc001  (pos in1) (pos 1'H1))
+
+  {set has_stall_pin 0}
+  {if maxLatencyConstr!=0 {  (rreg {maxLatencyConstr}  out1_pipe out1  asc001  clk (property cycletime {clkPeriodConstr}) (property minlat 0) (property outdelay {outputDelayAllowance}))} {  (assign out1  asc001  ) }}
+)

@@ -1,0 +1,12 @@
+31614		// ppid
+31618		// pid
+ws26	// host name
+bdw_work/trace/sim.NODPO_V.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685085119	// start time: Fri May 26 15:11:59 2023
+1685085121	// end time:   Fri May 26 15:12:01 2023
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/hub_ncverilog -f bdw_work/sims/NODPO_V/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_dut_NODPO +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/NODPO_V/sim_NODPO_V.so +hubSetOption+bdr=bdw_work/sims/NODPO_V/sim.bdr -l bdw_work/sims/NODPO_V/bdw_sim_verilog.log
+

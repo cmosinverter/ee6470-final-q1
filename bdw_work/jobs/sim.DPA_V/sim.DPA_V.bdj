@@ -1,0 +1,12 @@
+28902		// ppid
+28905		// pid
+ws26	// host name
+bdw_work/trace/sim.DPA_V.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685084238	// start time: Fri May 26 14:57:18 2023
+1685084268	// end time:   Fri May 26 14:57:48 2023
+make --no-print-directory -f Makefile CWBExec_sim=1 sim_DPA_V
+

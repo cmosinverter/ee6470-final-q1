@@ -1,0 +1,12 @@
+19693		// ppid
+19697		// pid
+ws26	// host name
+bdw_work/trace/build.DPO_REGION_V.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+2		// exit status
+0		// quiet
+0		// background
+1685085493	// start time: Fri May 26 15:18:13 2023
+1685085829	// end time:   Fri May 26 15:23:49 2023
+make --no-print-directory -f Makefile CWBExec_build=1 build_DPO_REGION_V_sub
+

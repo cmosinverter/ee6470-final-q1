@@ -1,0 +1,12 @@
+13977		// ppid
+13980		// pid
+ws26	// host name
+bdw_work/trace/hlsv.dut.DPO_AUTO_EXPR.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685085421	// start time: Fri May 26 15:17:01 2023
+1685085422	// end time:   Fri May 26 15:17:02 2023
+make --no-print-directory -f Makefile CWBExec_hlsv=1 hlsv_dut_DPO_AUTO_EXPR
+

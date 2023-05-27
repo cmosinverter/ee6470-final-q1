@@ -1,0 +1,79 @@
+xrun(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s003: Started on May 26, 2023 at 15:17:11 CST
+xrun
+	-sdfdir bdw_work/sims/DPO_AUTO_EXPR_V
+	+xm64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+xminput+bdw_work/sims/DPO_AUTO_EXPR_V/ncverilog.do
+	+xmlibdirname+bdw_work/sims/DPO_AUTO_EXPR_V
+	+BDW_VLOG_DUMPFILE+bdw_work/sims/DPO_AUTO_EXPR_V/verilog.vcd
+	-f bdw_work/sims/DPO_AUTO_EXPR_V/siminfo
+		bdw_work/sims/top_DPO_AUTO_EXPR_V.v
+		bdw_work/wrappers/dut_cosim.v
+		bdw_work/modules/dut/DPO_AUTO_EXPR/dut_rtl.v
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_dut_DPO_AUTO_EXPR
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/DPO_AUTO_EXPR_V/sim_DPO_AUTO_EXPR_V.so
+	+hubSetOption+bdr=bdw_work/sims/DPO_AUTO_EXPR_V/sim.bdr
+	-l bdw_work/sims/DPO_AUTO_EXPR_V/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+BDW_VLOG_DUMPFILE+bdw_work/sims/DPO_AUTO_EXPR_V/verilog.vcd
+	+hubSetOption+libdef=bdw_work/sims/DPO_AUTO_EXPR_V/sim_DPO_AUTO_EXPR_V.so
+	+hubSetOption+bdr=bdw_work/sims/DPO_AUTO_EXPR_V/sim.bdr
+
+file: bdw_work/sims/top_DPO_AUTO_EXPR_V.v
+			$value$plusargs("BDW_VLOG_DUMPFILE+%s",dump_file);
+			              |
+xmvlog: *W,NOSYST (bdw_work/sims/top_DPO_AUTO_EXPR_V.v,41|17): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+	module worklib.top:v
+		errors: 0, warnings: 1
+file: bdw_work/wrappers/dut_cosim.v
+	module worklib.dut_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/dut/DPO_AUTO_EXPR/dut_rtl.v
+	module worklib.dut:v
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:v <0x688e0c32>
+			streams: 114, words: 104070
+		worklib.dut:v <0x6f4fbc9c>
+			streams: 100, words: 36111
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:             188     188
+		Scalar wires:           37       -
+		Vectored wires:          7       -
+		Always blocks:          72      72
+		Initial blocks:          7       7
+		Cont. assignments:      21      38
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+Simulation stopped via $stop(1) at time 9615100 PS + 0
+./bdw_work/sims/top_DPO_AUTO_EXPR_V.v:67 		#100 $stop;
+xcelium> quit
+TOOL:	xrun(64)	22.03-s003: Exiting on May 26, 2023 at 15:17:13 CST  (total: 00:00:02)

@@ -1,0 +1,12 @@
+28123		// ppid
+28126		// pid
+ws26	// host name
+bdw_work/trace/hls.dut.NODPO.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685085087	// start time: Fri May 26 15:11:27 2023
+1685085109	// end time:   Fri May 26 15:11:49 2023
+make --no-print-directory -f Makefile -j1 CWBExec_hlsc=1 bdw_work/modules/dut/NODPO/dut_rtl.cc bdw_work/modules/dut/NODPO/dut_rtl.v bdw_work/modules/dut/NODPO/stratus_hls.bdr
+

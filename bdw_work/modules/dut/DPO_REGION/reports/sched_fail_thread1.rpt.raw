@@ -1,0 +1,1030 @@
+#############################[ Latency Violation ]############################
+                                                                              
+Latency constraint "computation" was relaxed from 2 to 64 to find a schedule  
+See User Guide section titled "Latency and Protocol Blocks Errors."           
+The addition of the following cycle(s):                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB18>Cycle 3</bdw>	 (VIOL_5) ]                                                         
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB23>Cycle 4</bdw>	 (VIOL_6) ]                                                         
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB28>Cycle 5</bdw>	 (VIOL_7) ]                                                         
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB33>Cycle 6</bdw>	 (VIOL_8) ]                                                         
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB38>Cycle 7</bdw>	 (VIOL_9) ]                                                         
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB8>Cycle 8</bdw>	 (VIOL_10) ]                                                        
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB48>Cycle 9</bdw>	 (VIOL_11) ]                                                        
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB53>Cycle 10</bdw>	 (VIOL_12) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB58>Cycle 11</bdw>	 (VIOL_13) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB63>Cycle 12</bdw>	 (VIOL_14) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB68>Cycle 13</bdw>	 (VIOL_15) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB73>Cycle 14</bdw>	 (VIOL_16) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB78>Cycle 15</bdw>	 (VIOL_17) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB48>Cycle 16</bdw>	 (VIOL_11)	 (VIOL_18) ]                                            
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB88>Cycle 17</bdw>	 (VIOL_19) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB93>Cycle 18</bdw>	 (VIOL_20) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB98>Cycle 19</bdw>	 (VIOL_21) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB103>Cycle 20</bdw>	 (VIOL_22) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB108>Cycle 21</bdw>	 (VIOL_23) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB113>Cycle 22</bdw>	 (VIOL_24) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB118>Cycle 23</bdw>	 (VIOL_25) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB88>Cycle 24</bdw>	 (VIOL_19)	 (VIOL_26) ]                                            
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB128>Cycle 25</bdw>	 (VIOL_27) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB133>Cycle 26</bdw>	 (VIOL_28) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB138>Cycle 27</bdw>	 (VIOL_29) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB143>Cycle 28</bdw>	 (VIOL_30) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB148>Cycle 29</bdw>	 (VIOL_31) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB153>Cycle 30</bdw>	 (VIOL_32) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB158>Cycle 31</bdw>	 (VIOL_33) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB128>Cycle 32</bdw>	 (VIOL_27)	 (VIOL_34) ]                                            
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB168>Cycle 33</bdw>	 (VIOL_35) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB173>Cycle 34</bdw>	 (VIOL_36) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB178>Cycle 35</bdw>	 (VIOL_37) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB183>Cycle 36</bdw>	 (VIOL_38) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB188>Cycle 37</bdw>	 (VIOL_39) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB193>Cycle 38</bdw>	 (VIOL_40) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB198>Cycle 39</bdw>	 (VIOL_41) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB168>Cycle 40</bdw>	 (VIOL_35)	 (VIOL_42) ]                                            
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB208>Cycle 41</bdw>	 (VIOL_43) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB213>Cycle 42</bdw>	 (VIOL_44) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB218>Cycle 43</bdw>	 (VIOL_45) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB223>Cycle 44</bdw>	 (VIOL_46) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB228>Cycle 45</bdw>	 (VIOL_47) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB233>Cycle 46</bdw>	 (VIOL_48) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB238>Cycle 47</bdw>	 (VIOL_49) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB208>Cycle 48</bdw>	 (VIOL_43)	 (VIOL_50) ]                                            
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB248>Cycle 49</bdw>	 (VIOL_51) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB253>Cycle 50</bdw>	 (VIOL_52) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB258>Cycle 51</bdw>	 (VIOL_53) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB263>Cycle 52</bdw>	 (VIOL_54) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB268>Cycle 53</bdw>	 (VIOL_55) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB273>Cycle 54</bdw>	 (VIOL_56) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB278>Cycle 55</bdw>	 (VIOL_57) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB248>Cycle 56</bdw>	 (VIOL_51)	 (VIOL_58) ]                                            
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB288>Cycle 57</bdw>	 (VIOL_59) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB293>Cycle 58</bdw>	 (VIOL_60) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB298>Cycle 59</bdw>	 (VIOL_61) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB303>Cycle 60</bdw>	 (VIOL_62) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB308>Cycle 61</bdw>	 (VIOL_63) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB313>Cycle 62</bdw>	 (VIOL_64) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB318>Cycle 63</bdw>	 (VIOL_65) ]                                                       
+[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB323>Cycle 64</bdw>	 (VIOL_66) ]                                                       
+Violated this latency constraint                                              
+Found 3 path(s) that caused violation                                         
+                                                                              
+Clock period          :    5.000  
+Cycle slack           :    0.500  
+--------------------------------  
+Effective clock period:    4.500  
+                                  
+******************************[ Violator Path 1 ]*****************************
+                                                                              
+                                                                      
+*** Protocol block "reset" ***                                        
+                                                                      
+------------------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB8>Cycle 1</bdw> ]-----------------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+------------------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB13>Cycle 2</bdw> ]-----------------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB18>Cycle 3</bdw> !!! VIOLATION !!! ]--------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB23>Cycle 4</bdw> !!! VIOLATION !!! ]--------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB28>Cycle 5</bdw> !!! VIOLATION !!! ]--------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB33>Cycle 6</bdw> !!! VIOLATION !!! ]--------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB38>Cycle 7</bdw> !!! VIOLATION !!! ]--------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB8>Cycle 8</bdw> !!! VIOLATION !!! ]--------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP42>OP42</bdw>   <bdw source=dut.cc:61:14>dut.cc:61,14</bdw>  < din_data: input port >           0.114  0.114  
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP43>OP43</bdw>   <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_4.in1        0.000  0.114  
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP46>OP46</bdw>   <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt0_1.in1   0.019  0.133  
+DFFD                 DFF (Tsu)                          0.127  0.260  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB48>Cycle 9</bdw> !!! VIOLATION !!! ]--------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB53>Cycle 10</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB58>Cycle 11</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB63>Cycle 12</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB68>Cycle 13</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB73>Cycle 14</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB78>Cycle 15</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB48>Cycle 16</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP109>OP109</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+DFFD                 DFF (Tsu)                          0.127  0.280  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB88>Cycle 17</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB93>Cycle 18</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB98>Cycle 19</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB103>Cycle 20</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB108>Cycle 21</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB113>Cycle 22</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB118>Cycle 23</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB88>Cycle 24</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP172>OP172</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+DFFD                 DFF (Tsu)                          0.127  0.280  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB128>Cycle 25</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB133>Cycle 26</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB138>Cycle 27</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB143>Cycle 28</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB148>Cycle 29</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB153>Cycle 30</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB158>Cycle 31</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB128>Cycle 32</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP235>OP235</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+DFFD                 DFF (Tsu)                          0.127  0.280  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB168>Cycle 33</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB173>Cycle 34</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB178>Cycle 35</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB183>Cycle 36</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB188>Cycle 37</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB193>Cycle 38</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB198>Cycle 39</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB168>Cycle 40</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP298>OP298</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+DFFD                 DFF (Tsu)                          0.127  0.280  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB208>Cycle 41</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB213>Cycle 42</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB218>Cycle 43</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB223>Cycle 44</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB228>Cycle 45</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB233>Cycle 46</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB238>Cycle 47</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB208>Cycle 48</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP361>OP361</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+DFFD                 DFF (Tsu)                          0.127  0.280  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB248>Cycle 49</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB253>Cycle 50</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB258>Cycle 51</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB263>Cycle 52</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB268>Cycle 53</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB273>Cycle 54</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB278>Cycle 55</bdw> !!! VIOLATION !!! ]-------------------
+                                                                      
+*** Protocol block "cynw_p2p_in_get" ***                              
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB248>Cycle 56</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP424>OP424</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+DFFD                 DFF (Tsu)                          0.127  0.280  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB288>Cycle 57</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP536>OP536</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt1_1.in2   0.039  0.153  
+DFFD                 DFF (Tsu)                          0.127  0.280  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB293>Cycle 58</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP537>OP537</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt8_0.in2   0.148  0.262  
+DFFD                 DFF (Tsu)                          0.127  0.389  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB298>Cycle 59</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP538>OP538</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt14_0.in3  0.210  0.324  
+DFFD                 DFF (Tsu)                          0.127  0.451  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB303>Cycle 60</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP539>OP539</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt15_0.in3  0.229  0.343  
+DFFD                 DFF (Tsu)                          0.127  0.470  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB308>Cycle 61</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP540>OP540</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt16_0.in3  0.225  0.339  
+DFFD                 DFF (Tsu)                          0.127  0.466  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB313>Cycle 62</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP541>OP541</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt17_0.in3  0.254  0.367  
+DFFD                 DFF (Tsu)                          0.127  0.494  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB318>Cycle 63</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP542>OP542</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt18_0.in3  0.242  0.356  
+DFFD                 DFF (Tsu)                          0.127  0.483  
+                                                                      
+---------------------[ <bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB323>Cycle 64</bdw> !!! VIOLATION !!! ]-------------------
+OP ID  Source        Resource                           Incr   Accum  
+                                                                      
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP550>OP550</bdw>  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>   dut_entirecomputation_alt19_0.in3  0.261  0.375  
+DFFD                 DFF (Tsu)                          0.127  0.502  
+                                                                      
+                                                                      
+======================================================================
+=========================== Call Stack Table==========================
+======================================================================
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP42>OP42</bdw> Called:                                     
+          at <bdw source=cynw_p2p.h:1716:20>cynw_p2p.h:1716,20</bdw>                          
+          called from <bdw source=cynw_p2p.h:1553:8>cynw_p2p.h:1553,8</bdw> (in use_data())  
+          called from <bdw source=cynw_p2p.h:1476:7>cynw_p2p.h:1476,7</bdw> (in nb_get())    
+          called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())            
+          called from <bdw source=cynw_p2p.h:494:43>cynw_p2p.h:494,43</bdw> (in data())      
+          called from <bdw source=dut.h:41:27>dut.h:41,27</bdw> (in din())             
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())             
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())             
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP43>OP43</bdw> Called:                                     
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())  
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP46>OP46</bdw> Called:                                     
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())  
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP109>OP109</bdw> Called:                                    
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())  
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP172>OP172</bdw> Called:                                    
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())  
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP235>OP235</bdw> Called:                                    
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())  
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP298>OP298</bdw> Called:                                    
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())  
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP361>OP361</bdw> Called:                                    
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())  
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP424>OP424</bdw> Called:                                    
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())  
+                                                 
+<bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP550>OP550</bdw> Called:                                    
+          at <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>                      
+          called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())  
+          called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [7]())  
+                                                 
+======================================================================
+========================== Cycle Explanation =========================
+======================================================================
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB8>Cycle 1</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB13>Cycle 2</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [1]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB18>Cycle 3</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [2]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB23>Cycle 4</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [3]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB28>Cycle 5</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [4]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB33>Cycle 6</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [5]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB38>Cycle 7</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [6]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB8>Cycle 8</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [0]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB48>Cycle 9</bdw> was added because of wait statement in protocol block(s):     
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB53>Cycle 10</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [1]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB58>Cycle 11</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [2]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB63>Cycle 12</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [3]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB68>Cycle 13</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [4]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB73>Cycle 14</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [5]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB78>Cycle 15</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [6]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB48>Cycle 16</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [1]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB88>Cycle 17</bdw> was added because of the following resource conflict(s) between <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP172>OP172</bdw> and the previous cycle resources:
+     OP ID  Resource                          Source       
+     -----  --------                          ------       
+     <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP109>OP109</bdw>  dut_entirecomputation_alt1_1.in2  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>  
+                                                           
+     HINT: Try adding "wait();" or increasing latency between Op172 and conflicting operations.
+                                                           
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB93>Cycle 18</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [1]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB98>Cycle 19</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [2]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB103>Cycle 20</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [3]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB108>Cycle 21</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [4]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB113>Cycle 22</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [5]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB118>Cycle 23</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [6]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB88>Cycle 24</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())   
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [2]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB128>Cycle 25</bdw> was added because of the following resource conflict(s) between <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP235>OP235</bdw> and the previous cycle resources:
+     OP ID  Resource                          Source       
+     -----  --------                          ------       
+     <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP172>OP172</bdw>  dut_entirecomputation_alt1_1.in2  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>  
+                                                           
+     HINT: Try adding "wait();" or increasing latency between Op235 and conflicting operations.
+                                                           
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB133>Cycle 26</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [1]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB138>Cycle 27</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [2]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB143>Cycle 28</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [3]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB148>Cycle 29</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [4]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB153>Cycle 30</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [5]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB158>Cycle 31</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [6]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB128>Cycle 32</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())   
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [3]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB168>Cycle 33</bdw> was added because of the following resource conflict(s) between <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP298>OP298</bdw> and the previous cycle resources:
+     OP ID  Resource                          Source       
+     -----  --------                          ------       
+     <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP235>OP235</bdw>  dut_entirecomputation_alt1_1.in2  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>  
+                                                           
+     HINT: Try adding "wait();" or increasing latency between Op298 and conflicting operations.
+                                                           
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB173>Cycle 34</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [1]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB178>Cycle 35</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [2]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB183>Cycle 36</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [3]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB188>Cycle 37</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [4]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB193>Cycle 38</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [5]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB198>Cycle 39</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [6]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB168>Cycle 40</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())   
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [4]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB208>Cycle 41</bdw> was added because of the following resource conflict(s) between <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP361>OP361</bdw> and the previous cycle resources:
+     OP ID  Resource                          Source       
+     -----  --------                          ------       
+     <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP298>OP298</bdw>  dut_entirecomputation_alt1_1.in2  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>  
+                                                           
+     HINT: Try adding "wait();" or increasing latency between Op361 and conflicting operations.
+                                                           
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB213>Cycle 42</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [1]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB218>Cycle 43</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [2]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB223>Cycle 44</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [3]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB228>Cycle 45</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [4]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB233>Cycle 46</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [5]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB238>Cycle 47</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [6]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB208>Cycle 48</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())   
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [5]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB248>Cycle 49</bdw> was added because of the following resource conflict(s) between <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP424>OP424</bdw> and the previous cycle resources:
+     OP ID  Resource                          Source       
+     -----  --------                          ------       
+     <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP361>OP361</bdw>  dut_entirecomputation_alt1_1.in2  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>  
+                                                           
+     HINT: Try adding "wait();" or increasing latency between Op424 and conflicting operations.
+                                                           
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB253>Cycle 50</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [1]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB258>Cycle 51</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [2]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB263>Cycle 52</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [3]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB268>Cycle 53</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [4]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB273>Cycle 54</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [5]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB278>Cycle 55</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [6]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB248>Cycle 56</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [0]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())   
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [6]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB288>Cycle 57</bdw> was added because of the following resource conflict(s) between <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP536>OP536</bdw> and the previous cycle resources:
+     OP ID  Resource                          Source       
+     -----  --------                          ------       
+     <bdw object=op:path_count/dut/DPO_REGION/sched/thread1/OP424>OP424</bdw>  dut_entirecomputation_alt1_1.in2  <bdw source=dut.cc:53:8>dut.cc:53,8</bdw>  
+                                                           
+     HINT: Try adding "wait();" or increasing latency between Op536 and conflicting operations.
+                                                           
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB293>Cycle 58</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [1]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [7]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB298>Cycle 59</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [2]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [7]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB303>Cycle 60</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [3]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [7]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB308>Cycle 61</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [4]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [7]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB313>Cycle 62</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [5]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [7]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB318>Cycle 63</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [6]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [7]())   
+                                                                      
+<bdw object=basic_block:path_count/dut/DPO_REGION/sched/thread1/BB323>Cycle 64</bdw> was added because of wait statement in protocol block(s):    
+     Directive          Source  
+     ---------          ------  
+     "cynw_p2p_in_get"          
+                        at <bdw source=cynw_p2p.h:1444:7>cynw_p2p.h:1444,7</bdw>                 
+                        called from <bdw source=dut.cc:61:14>dut.cc:61,14</bdw> (in get())  
+                        called from <bdw source=dut.cc:60:4>dut.cc:60,4</bdw> (in [7]())   
+                        called from <bdw source=dut.cc:59:3>dut.cc:59,3</bdw> (in [7]())   
+                                                                      

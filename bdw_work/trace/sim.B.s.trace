@@ -1,0 +1,22 @@
+
+        SystemC 2.3.3-Accellera --- Jun 11 2021 12:51:14
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+
+Info: (I703) tracing timescale unit set: 1 ps (bdw_work/sims/B/systemc.vcd)
+Latency for sample 0 is 1
+Latency for sample 1 is 1
+Latency for sample 2 is 1
+Latency for sample 3 is 1
+Latency for sample 4 is 1
+Latency for sample 5 is 1
+Latency for sample 6 is 1
+Latency for sample 7 is 1
+Latency for sample 8 is 1
+Latency for sample 9 is 1
+Average latency 1.
+Simulated time == 3265 ns
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Actual simulation run time == 0.096803 seconds

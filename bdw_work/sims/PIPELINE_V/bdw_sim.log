@@ -1,0 +1,92 @@
+TOOL:	xrun(64)	22.03-s003: Started on May 26, 2023 at 17:57:34 CST
+xrun(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './bdw_work/modules/dut/PIPELINE/dut_rtl.v' is newer than expected.
+	expected: Wed May 24 19:42:15 2023
+	actual:   Fri May 26 17:57:23 2023
+file: bdw_work/sims/top_PIPELINE_V.v
+			$value$plusargs("BDW_VLOG_DUMPFILE+%s",dump_file);
+			              |
+xmvlog: *W,NOSYST (bdw_work/sims/top_PIPELINE_V.v,41|17): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+file: bdw_work/modules/dut/PIPELINE/dut_rtl.v
+	module worklib.dut:v
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:v <0x057639b5>
+			streams: 114, words: 104070
+		worklib.dut:v <0x48bc9452>
+			streams: 1220, words: 349970
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:             891     891
+		Scalar wires:          179       -
+		Vectored wires:         51       -
+		Always blocks:         775     775
+		Initial blocks:          7       7
+		Cont. assignments:     218     225
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> run
+
+        SystemC 2.3.3-Accellera --- Jun 11 2021 12:51:14
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+Latency for sample 0 is 1
+Latency for sample 1 is 69
+Latency for sample 2 is 70
+Latency for sample 3 is 71
+Latency for sample 4 is 72
+Latency for sample 5 is 73
+Latency for sample 6 is 74
+Latency for sample 7 is 75
+Latency for sample 8 is 76
+Latency for sample 9 is 77
+Average latency 65.
+Simulated time == 385 ns
+Simulation stopped via $stop(1) at time 385100 PS + 0
+./bdw_work/sims/top_PIPELINE_V.v:67 		#100 $stop;
+xcelium> quit
+TOOL:	xrun(64)	22.03-s003: Exiting on May 26, 2023 at 17:57:36 CST  (total: 00:00:02)
+****************************************
+Fri May 26 17:57:36 CST 2023
+Performing Simulation Results Comparison
+for PIPELINE_V Simulation...
+2,10c2,10
+< 2172
+< 2151
+< 1878
+< 1548
+< 1506
+< 2591
+< 2164
+< 1996
+< 2087
+---
+> 3396
+> 2640
+> 672
+> 192
+> 0
+> 1520
+> 1954
+> 1597
+> 1472
+  PIPELINE_V: SIMULATION FAILED
+****************************************

@@ -1,0 +1,16 @@
+(module dut_Add_14Ux14U_14U_4
+  (input [13:0] in2)
+  (input [13:0] in1)
+  (output [13:0] out1)
+  {if maxLatencyConstr!=0 {(clock clk)}}
+  {if maxLatencyConstr!=0 {(input stall)}}
+  {if maxLatencyConstr!=0 {(wire signed not_stall)}}
+  (wire [13:0] asc001 )
+  (sum i1 asc001  (pos in2) (pos in1))
+  {if maxLatencyConstr!=0 {
+  (btreei INVERT_STALL not_stall stall)
+
+  {set has_stall_pin 1}
+  }}
+  {if maxLatencyConstr!=0 {  (rreg {maxLatencyConstr}  out1_pipe out1  asc001  clk (property cycletime {clkPeriodConstr}) (property minlat 0) (property outdelay {outputDelayAllowance}) (enable not_stall))} {  (assign out1  asc001  ) }}
+)

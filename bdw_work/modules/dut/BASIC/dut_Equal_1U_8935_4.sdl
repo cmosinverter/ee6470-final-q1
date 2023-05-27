@@ -1,0 +1,10 @@
+(module dut_Equal_1U_8935_4
+  (input [13:0] in1)
+  (output out1)
+  {if maxLatencyConstr!=0 {(clock clk)}}
+  (wire asc001 )
+  (compeqm1 i1 asc001  (pos  14'H26e1) (neg  in1) (neg 14'H0001))
+
+  {set has_stall_pin 0}
+  {if maxLatencyConstr!=0 {  (rreg {maxLatencyConstr}  out1_pipe out1  asc001  clk (property cycletime {clkPeriodConstr}) (property minlat 0) (property outdelay {outputDelayAllowance}))} {  (assign out1  asc001  ) }}
+)

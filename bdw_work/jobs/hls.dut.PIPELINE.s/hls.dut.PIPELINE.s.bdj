@@ -1,0 +1,12 @@
+27905		// ppid
+27908		// pid
+ws26	// host name
+bdw_work/trace/hls.dut.PIPELINE.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685095022	// start time: Fri May 26 17:57:02 2023
+1685095044	// end time:   Fri May 26 17:57:24 2023
+make --no-print-directory -f Makefile -j1 CWBExec_hlsc=1 bdw_work/modules/dut/PIPELINE/dut_rtl.cc bdw_work/modules/dut/PIPELINE/dut_rtl.v bdw_work/modules/dut/PIPELINE/stratus_hls.bdr
+

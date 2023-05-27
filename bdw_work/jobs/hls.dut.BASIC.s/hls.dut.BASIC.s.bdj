@@ -1,0 +1,12 @@
+18723		// ppid
+18726		// pid
+ws26	// host name
+bdw_work/trace/hls.dut.BASIC.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685083991	// start time: Fri May 26 14:53:11 2023
+1685084008	// end time:   Fri May 26 14:53:28 2023
+make --no-print-directory -f Makefile -j1 CWBExec_hlsc=1 bdw_work/modules/dut/BASIC/dut_rtl.cc bdw_work/modules/dut/BASIC/dut_rtl.v bdw_work/modules/dut/BASIC/stratus_hls.bdr
+

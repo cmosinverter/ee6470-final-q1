@@ -1,0 +1,12 @@
+4658		// ppid
+4661		// pid
+ws26	// host name
+bdw_work/trace/sim.DPO_AUTO_OP_V.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685085279	// start time: Fri May 26 15:14:39 2023
+1685085309	// end time:   Fri May 26 15:15:09 2023
+make --no-print-directory -f Makefile CWBExec_sim=1 sim_DPO_AUTO_OP_V
+

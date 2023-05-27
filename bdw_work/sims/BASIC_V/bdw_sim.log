@@ -1,0 +1,34 @@
+TOOL:	xrun(64)	22.03-s003: Started on May 26, 2023 at 14:54:57 CST
+xrun(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> run
+
+        SystemC 2.3.3-Accellera --- Jun 11 2021 12:51:14
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+Latency for sample 0 is 7
+Latency for sample 1 is 7
+Latency for sample 2 is 7
+Latency for sample 3 is 7
+Latency for sample 4 is 7
+Latency for sample 5 is 7
+Latency for sample 6 is 7
+Latency for sample 7 is 7
+Latency for sample 8 is 7
+Latency for sample 9 is 7
+Average latency 7.
+Simulated time == 25615 ns
+Simulation stopped via $stop(1) at time 25615100 PS + 0
+./bdw_work/sims/top_BASIC_V.v:67 		#100 $stop;
+xcelium> quit
+TOOL:	xrun(64)	22.03-s003: Exiting on May 26, 2023 at 14:54:58 CST  (total: 00:00:01)
+****************************************
+Fri May 26 14:54:59 CST 2023
+Performing Simulation Results Comparison
+for BASIC_V Simulation...
+  BASIC_V: SIMULATION PASSED
+****************************************

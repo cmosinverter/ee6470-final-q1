@@ -1,0 +1,16 @@
+(module dut_Sub_7Ux1U_7S_4
+  (input [6:0] in2)
+  (input in1)
+  (output signed [6:0] out1)
+  {if maxLatencyConstr!=0 {(clock clk)}}
+  {if maxLatencyConstr!=0 {(input stall)}}
+  {if maxLatencyConstr!=0 {(wire signed not_stall)}}
+  (wire signed [6:0] asc001 )
+  (sum i1 asc001  (pos in2) (neg in1))
+  {if maxLatencyConstr!=0 {
+  (btreei INVERT_STALL not_stall stall)
+
+  {set has_stall_pin 1}
+  }}
+  {if maxLatencyConstr!=0 {  (rreg {maxLatencyConstr}  out1_pipe out1  asc001  clk (property cycletime {clkPeriodConstr}) (property minlat 0) (property outdelay {outputDelayAllowance}) (enable not_stall))} {  (assign out1  asc001  ) }}
+)

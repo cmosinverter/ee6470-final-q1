@@ -1,0 +1,12 @@
+27947		// ppid
+27951		// pid
+ws26	// host name
+bdw_work/trace/sim.BASIC_V.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685084097	// start time: Fri May 26 14:54:57 2023
+1685084098	// end time:   Fri May 26 14:54:58 2023
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/hub_ncverilog -f bdw_work/sims/BASIC_V/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_dut_BASIC +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/BASIC_V/sim_BASIC_V.so +hubSetOption+bdr=bdw_work/sims/BASIC_V/sim.bdr -l bdw_work/sims/BASIC_V/bdw_sim_verilog.log
+

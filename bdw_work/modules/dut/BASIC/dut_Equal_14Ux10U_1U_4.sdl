@@ -1,0 +1,16 @@
+(module dut_Equal_14Ux10U_1U_4
+  (input [13:0] in2)
+  (input [9:0] in1)
+  (output out1)
+  {if maxLatencyConstr!=0 {(clock clk)}}
+  {if maxLatencyConstr!=0 {(input stall)}}
+  {if maxLatencyConstr!=0 {(wire signed not_stall)}}
+  (wire asc001 )
+  (compeqm1 i1 asc001  (pos  in1) (neg  in2) (neg 10'H001))
+  {if maxLatencyConstr!=0 {
+  (btreei INVERT_STALL not_stall stall)
+
+  {set has_stall_pin 1}
+  }}
+  {if maxLatencyConstr!=0 {  (rreg {maxLatencyConstr}  out1_pipe out1  asc001  clk (property cycletime {clkPeriodConstr}) (property minlat 0) (property outdelay {outputDelayAllowance}) (enable not_stall))} {  (assign out1  asc001  ) }}
+)

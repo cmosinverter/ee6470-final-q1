@@ -1,0 +1,375 @@
+Scheduler report for : dout_m_req_gen_prev_trig_reg                                                               
+---------------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+dout.m_req.m_prev_tr  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_req.m_trig_re  8 (7:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_req.m_prev_tr  8 (7:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : dout_m_req_gen_active                                                                      
+--------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+dout.m_req.m_prev_tr  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_req.m_trig_re  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_req.gen_activ  4 (3:FALSE)      --              FALSE  dut.h,l:42,c:29                                     
+                                                                                                                  
+dout.m_req.active.do  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : dout_gen_vld                                                                               
+-----------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+dout.m_req_active.do  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_unacked_req.d  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.gen_vld          4 (3:FALSE)      --              FALSE  dut.h,l:42,c:29                                     
+                                                                                                                  
+dout.vld.dout.gen_vl  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : dout_m_req_gen_next_trig_reg                                                               
+---------------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+dout.m_req.m_trig_re  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_req.gen_next_  4 (3:FALSE)      --              FALSE  dut.h,l:42,c:29                                     
+                                                                                                                  
+dout.m_req.m_next_tr  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : din_gen_unvalidated_req                                                                    
+----------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+din.m_unvalidated_re  5 (4:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din                   7 (6:FALSE)      --              FALSE  dut.h,l:41,c:27                                     
+                                                                                                                  
+din.m_unvalidated_re  8 (7:TRUE)       --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_busy_req_0.din  9 (8:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.vld.din.gen_unva  9 (8:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.gen_unvalidated_  9 (8:FALSE)      --              FALSE  dut.h,l:41,c:27                                     
+                                                                                                                  
+din.m_unvalidated_re  9 (8:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : din_gen_do_stall_reg_full                                                                  
+------------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+din.m_stall_reg_full  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_stalling.din.g  8 (7:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_data_is_valid.  8 (7:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.gen_do_stall_reg  8 (7:FALSE)      --              FALSE  dut.h,l:41,c:27                                     
+                                                                                                                  
+din.m_stall_reg_full  8 (7:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : thread1                                                                                    
+------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+din.m_busy_req_0.res  3 (2:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_stalling.reset  3 (2:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_req.m_trig_re  3 (2:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dp                    5 (4:FALSE)      --              FALSE  dut.cc,l:49,c:12                                    
+                                                                                                                  
+dp                    5 (4:FALSE)      --              FALSE  dut.cc,l:49,c:12                                    
+                                                                                                                  
+dp                    5 (4:FALSE)      --              FALSE  dut.cc,l:49,c:12                                    
+                                                                                                                  
+dp                    5 (4:FALSE)      --              FALSE  dut.cc,l:49,c:12                                    
+                                                                                                                  
+dp                    5 (4:FALSE)      --              FALSE  dut.cc,l:49,c:12                                    
+                                                                                                                  
+dp                    5 (4:FALSE)      --              FALSE  dut.cc,l:49,c:12                                    
+                                                                                                                  
+dp                    5 (4:FALSE)      --              FALSE  dut.cc,l:49,c:12                                    
+                                                                                                                  
+dp                    5 (4:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:50,c:5                        
+                                                                                                                  
+i                     5 (4:FALSE)      --              FALSE  dut.cc,l:59,c:12 -> c:14                            
+                                                                                                                  
+dp[1]                 7 (6:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:1) -> l:59,c:3              
+                                                                                                                  
+dp[2]                 7 (6:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:2) -> l:59,c:3              
+                                                                                                                  
+dp[3]                 7 (6:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:3) -> l:59,c:3              
+                                                                                                                  
+dp[4]                 7 (6:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:4) -> l:59,c:3              
+                                                                                                                  
+dp[5]                 7 (6:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:5) -> l:59,c:3              
+                                                                                                                  
+dp[6]                 7 (6:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:6) -> l:59,c:3              
+                                                                                                                  
+dp[7]                 7 (6:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:7) -> l:59,c:3              
+                                                                                                                  
+dp[0]                 7 (6:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:0) -> l:59,c:3              
+                                                                                                                  
+i                     7 (6:FALSE)      --              FALSE  dut.cc,l:59,c:12 -> c:34                            
+                                                                                                                  
+j                     7 (6:FALSE)      --              FALSE  dut.cc,l:60,c:13 -> c:15                            
+                                                                                                                  
+                      7 (6:FALSE)      --              FALSE  f:dut.cc,l:59,c:36                                  
+                                                                                                                  
+dp[1]                 8 (7:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:1) -> l:62,c:4              
+                                                                                                                  
+dp[2]                 8 (7:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:2) -> l:62,c:4              
+                                                                                                                  
+dp[3]                 8 (7:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:3) -> l:62,c:4              
+                                                                                                                  
+dp[4]                 8 (7:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:4) -> l:62,c:4              
+                                                                                                                  
+dp[5]                 8 (7:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:5) -> l:62,c:4              
+                                                                                                                  
+dp[6]                 8 (7:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:6) -> l:62,c:4              
+                                                                                                                  
+dp[7]                 8 (7:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:7) -> l:62,c:4              
+                                                                                                                  
+dp[0]                 8 (7:FALSE)      --              FALSE  @(f:dut.cc,l:49,c:12->i:0) -> l:62,c:4              
+                                                                                                                  
+j                     8 (7:FALSE)      --              FALSE  dut.cc,l:60,c:13 -> c:36                            
+                                                                                                                  
+j                     8 (7:FALSE)      --              FALSE  dut.cc,l:60,c:13 -> l:65,c:17                       
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+f:dut.cc,l:64,c:19    8 (7:FALSE)      --              FALSE  & c:17                                              
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7                        
+                                                                                                                  
+                      8 (7:FALSE)      --              FALSE  f:dut.cc,l:64,c:17                                  
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7                        
+                                                                                                                  
+                      8 (7:FALSE)      --              FALSE  f:dut.cc,l:64,c:17                                  
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7                        
+                                                                                                                  
+                      8 (7:FALSE)      --              FALSE  f:dut.cc,l:64,c:17                                  
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7                        
+                                                                                                                  
+                      8 (7:FALSE)      --              FALSE  f:dut.cc,l:64,c:17                                  
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7                        
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7                        
+                                                                                                                  
+dp                    8 (7:FALSE)      --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7                        
+                                                                                                                  
+                      8 (7:FALSE)      --              FALSE  f:dut.cc,l:60,c:38                                  
+                                                                                                                  
+din.m_busy_req_0.get  9 (8:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dp                    11 (10:TRUE)     --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+dp                    11 (10:TRUE)     --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+dp                    11 (10:TRUE)     --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+dp                    11 (10:TRUE)     --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+j                     11 (10:TRUE)     --              FALSE  dut.cc,l:60,c:13                                    
+                                                                                                                  
+dp                    11 (10:TRUE)     --              FALSE  dut.cc,l:49,c:12 -> l:65,c:7                        
+                                                                                                                  
+din                   11 (10:TRUE)     --              FALSE  dut.h,l:41,c:27                                     
+                                                                                                                  
+thread1::get          11 (10:TRUE)     --              FALSE  dut.cc,l:29,c:11 mapped                             
+                                                                                                                  
+                      11 (10:TRUE)     --              FALSE  f:dut.cc,l:64,c:17                                  
+                                                                                                                  
+                      11 (10:TRUE)     --              FALSE  f:dut.cc,l:64,c:17                                  
+                                                                                                                  
+                      11 (10:TRUE)     --              FALSE  f:dut.cc,l:64,c:17                                  
+                                                                                                                  
+                      11 (10:TRUE)     --              FALSE  f:dut.cc,l:64,c:17                                  
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11                                    
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11 & l:64,c:11                        
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11 & l:64,c:11                        
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11 & l:64,c:11                        
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11 & l:64,c:11                        
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11 & l:64,c:11                        
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11 & l:64,c:11                        
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11 & l:64,c:11                        
+                                                                                                                  
+operator+=            11 (10:TRUE)     --              FALSE  dut.cc,l:65,c:11 & l:64,c:11                        
+                                                                                                                  
+f:dut.cc,l:60,c:22    11 (10:TRUE)     --              FALSE  & f:defines.h,l:30,c:23                             
+                                                                                                                  
+f:dut.cc,l:59,c:21    11 (10:TRUE)     --              FALSE  & f:defines.h,l:30,c:23                             
+                                                                                                                  
+dp                    12 (11:FALSE)    --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7 & c:13                 
+                                                                                                                  
+dp                    12 (11:FALSE)    --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7 & c:13                 
+                                                                                                                  
+dp                    12 (11:FALSE)    --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7 & c:13                 
+                                                                                                                  
+dp                    12 (11:FALSE)    --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7 & c:13                 
+                                                                                                                  
+dp                    12 (11:FALSE)    --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7 & c:13                 
+                                                                                                                  
+dp                    12 (11:FALSE)    --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7 & c:13                 
+                                                                                                                  
+dp                    12 (11:FALSE)    --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7 & c:13                 
+                                                                                                                  
+dp                    12 (11:FALSE)    --              FALSE  dut.cc,l:49,c:12 -> l:63,c:7 & c:13                 
+                                                                                                                  
+din.data.get::nb_get  12 (11:FALSE)    --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_busy_req_0.get  12 (11:FALSE)    --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+operator+=            12 (11:FALSE)    --              FALSE  dut.cc,l:65,c:11 & l:64,c:11 & operator= @l:63,c:1  
+                                                                                                                  
+operator+=            12 (11:FALSE)    --              FALSE  dut.cc,l:65,c:11 & l:64,c:11 & operator= @l:63,c:1  
+                                                                                                                  
+operator+=            12 (11:FALSE)    --              FALSE  dut.cc,l:65,c:11 & l:64,c:11 & operator= @l:63,c:1  
+                                                                                                                  
+operator+=            12 (11:FALSE)    --              FALSE  dut.cc,l:65,c:11 & l:64,c:11 & operator= @l:63,c:1  
+                                                                                                                  
+operator+=            12 (11:FALSE)    --              FALSE  dut.cc,l:65,c:11 & l:64,c:11 & operator= @l:63,c:1  
+                                                                                                                  
+operator+=            12 (11:FALSE)    --              FALSE  dut.cc,l:65,c:11 & l:64,c:11 & operator= @l:63,c:1  
+                                                                                                                  
+operator+=            12 (11:FALSE)    --              FALSE  dut.cc,l:65,c:11 & l:64,c:11 & operator= @l:63,c:1  
+                                                                                                                  
+operator+=            12 (11:FALSE)    --              FALSE  dut.cc,l:65,c:11 & l:64,c:11 & operator= @l:63,c:1  
+                                                                                                                  
+dout.data.put::nb_pu  17 (16:FALSE)    --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout                  17 (16:FALSE)    --              FALSE  dut.h,l:42,c:29                                     
+                                                                                                                  
+dout.m_req.m_trig_re  17 (16:FALSE)    --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout                  19 (18:TRUE)     --              FALSE  dut.h,l:42,c:29                                     
+                                                                                                                  
+thread1::put          19 (18:TRUE)     --              FALSE  dut.cc,l:29,c:11 mapped                             
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : dout_gen_stalling                                                                          
+----------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+dout.vld.dout.gen_st  4 (3:TRUE)       --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.busy.dout.gen_s  5 (4:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.gen_stalling     5 (4:FALSE)      --              FALSE  dut.h,l:42,c:29                                     
+                                                                                                                  
+dout.m_stalling.dout  5 (4:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : dout_gen_unacked_req                                                                       
+-------------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+dout.m_unacked_req.d  4 (3:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_stalling.dout  8 (7:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+dout.m_unacked_req.d  8 (7:FALSE)      --              FALSE  @(f:dut.h,l:42,c:29->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : din_gen_do_reg_vld                                                                         
+-----------------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+din.m_vld_reg.din.ge  5 (4:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din                   7 (6:FALSE)      --              FALSE  dut.h,l:41,c:27                                     
+                                                                                                                  
+din.m_vld_reg.din.ge  8 (7:TRUE)       --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_busy_internal.  9 (8:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.vld.din.gen_do_r  9 (8:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.gen_do_reg_vld::  9 (8:FALSE)      --              FALSE  dut.h,l:41,c:27                                     
+                                                                                                                  
+din.m_vld_reg.din.ge  9 (8:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  
+Scheduler report for : din_gen_busy                                                                               
+-----------------------------------                                                                                            
+                                                                                                                  
+Op                    SID(BB;Clocked)  Pipeline Stage  IS     SRCLOC                                              
+--                    ---------------  --------------  --     ------                                              
+                                                                                                                  
+din.vld.din.gen_busy  4 (3:TRUE)       --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_unvalidated_re  6 (5:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_busy_req_0.din  6 (5:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_data_is_invali  6 (5:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.gen_busy          6 (5:FALSE)      --              FALSE  dut.h,l:41,c:27                                     
+                                                                                                                  
+din.gen_busy          6 (5:FALSE)      --              FALSE  dut.h,l:41,c:27                                     
+                                                                                                                  
+din.m_data_is_invali  6 (5:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_busy_internal.  7 (6:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.busy.din.gen_bus  7 (6:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_data_is_valid.  7 (6:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+din.m_data_is_invali  7 (6:FALSE)      --              FALSE  @(f:dut.h,l:41,c:27->f:/usr/cadtool/cadence/STRATU  
+                                                                                                                  
+                                                                                                                  

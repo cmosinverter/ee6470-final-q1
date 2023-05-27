@@ -1,0 +1,24 @@
+make[3]: Nothing to be done for `bdw_work/wrappers/dut_wrap.h'.
+make --no-print-directory -f Makefile -j1 CWBExec_hls=1 hls_dut_BASIC
+make[4]: `bdw_work/modules/dut/BASIC/dut_rtl.cc' is up to date.
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/bdw_shell /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/tcl/bdw_siminfo.tcl project.tcl BASIC_V
+Generating dependencies for tb.cc
+Generating dependencies for main.cc
+make[4]: Nothing to be done for `bdw_work/wrappers/dut_wrap.h'.
+make[4]: `bdw_work/modules/dut/BASIC/dut_rtl.v' is up to date.
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/gcc/6.3/bin/g++ -TP -o bdw_work/sims/BASIC_V/main.o -I./ -Ibdw_work/wrappers    -DBDW_RTL_dut_BASIC  -c -g -DCLOCK_PERIOD=5.0    -fPIC  -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 main.cc
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/gcc/6.3/bin/g++ -TP -o bdw_work/sims/BASIC_V/tb.o -I./ -Ibdw_work/wrappers    -DBDW_RTL_dut_BASIC  -c -g -DCLOCK_PERIOD=5.0    -fPIC  -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/include -I/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 tb.cc
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/gcc/6.3/bin/g++ -shared -Wl,-Bsymbolic  \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/lib/64bit \
+        -Wl,-rpath,/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/lib-linux64 \
+        -Wl,--enable-new-dtags \
+	-o bdw_work/sims/BASIC_V/sim_BASIC_V.so \
+	bdw_work/modules/dut/BASIC/dut.o bdw_work/sims/BASIC_V/main.o bdw_work/sims/BASIC_V/system.o bdw_work/sims/BASIC_V/tb.o  \
+	 \
+	 \
+        bdw_work/libesc/libesc.a \
+	 \
+	-L /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/lib/64bit -L /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit  -L /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/systemc/2.3.3/lib-linux64 -lscv -lsystemc  -lbdw_st   \
+	-lm -lcrypt -ldl \
+	2>&1 | perl /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/hub_link_filter.pl

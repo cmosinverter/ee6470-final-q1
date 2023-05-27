@@ -1,0 +1,12 @@
+21217		// ppid
+21221		// pid
+ws26	// host name
+bdw_work/trace/build.B.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685094586	// start time: Fri May 26 17:49:46 2023
+1685094596	// end time:   Fri May 26 17:49:56 2023
+make --no-print-directory -f Makefile CWBExec_build=1 build_B_sub
+

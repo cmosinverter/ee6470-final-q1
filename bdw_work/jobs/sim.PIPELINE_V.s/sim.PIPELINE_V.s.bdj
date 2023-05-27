@@ -1,0 +1,12 @@
+31201		// ppid
+31205		// pid
+ws26	// host name
+bdw_work/trace/sim.PIPELINE_V.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685095054	// start time: Fri May 26 17:57:34 2023
+1685095056	// end time:   Fri May 26 17:57:36 2023
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/hub_ncverilog -f bdw_work/sims/PIPELINE_V/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_dut_PIPELINE +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/PIPELINE_V/sim_PIPELINE_V.so +hubSetOption+bdr=bdw_work/sims/PIPELINE_V/sim.bdr -l bdw_work/sims/PIPELINE_V/bdw_sim_verilog.log
+

@@ -1,0 +1,12 @@
+28969		// ppid
+28972		// pid
+ws26	// host name
+bdw_work/trace/hlsv.dut.NODPO.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685085109	// start time: Fri May 26 15:11:49 2023
+1685085110	// end time:   Fri May 26 15:11:50 2023
+make --no-print-directory -f Makefile CWBExec_hlsv=1 hlsv_dut_NODPO
+

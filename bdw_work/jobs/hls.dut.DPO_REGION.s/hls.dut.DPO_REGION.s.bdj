@@ -1,0 +1,12 @@
+20667		// ppid
+20695		// pid
+ws26	// host name
+bdw_work/trace/hls.dut.DPO_REGION.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+2		// exit status
+0		// quiet
+0		// background
+1685085495	// start time: Fri May 26 15:18:15 2023
+1685085829	// end time:   Fri May 26 15:23:49 2023
+make --no-print-directory -f Makefile -j1 CWBExec_hlsc=1 bdw_work/modules/dut/DPO_REGION/dut_rtl.cc bdw_work/modules/dut/DPO_REGION/dut_rtl.v bdw_work/modules/dut/DPO_REGION/stratus_hls.bdr
+

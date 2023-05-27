@@ -1,0 +1,12 @@
+25185		// ppid
+25188		// pid
+ws26	// host name
+bdw_work/trace/build.BASIC_V.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685084087	// start time: Fri May 26 14:54:47 2023
+1685084095	// end time:   Fri May 26 14:54:55 2023
+make --no-print-directory -f Makefile CWBExec_build=1 build_BASIC_V_sub
+
